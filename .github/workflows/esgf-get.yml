@@ -58,15 +58,14 @@ jobs:
     - name: Generate Markdown from Sphinx
       run: |
         sphinx-build -b markdown build_md/ build_md_out/
-
-    # 7. Commit and push generated Markdown back to your repo
-    - name: Commit and push generated Markdown
+        
+    - name: Configure Git settings
       run: |
-        git config --global user.name "cmip-actions"
-        git config --global user.email "technical@wcrp-cmip.org"
-        git add build_md_out/ mkdocs.yml
-        if git diff --cached --quiet; then
-          echo "No changes to commit"
-        else
-          git commit -m "Update generated Markdown docs [skip ci]"
-          git push origin HEAD:${{ github.ref }}
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "<>"
+    - name: Stage changes
+      run: git add .
+    - name: Commit changes
+      run: git commit -m "Update generated Markdown docs [skip ci]" || echo "No changes to commit"
+    - name: Push changes
+      run: git push origin HEAD:main
