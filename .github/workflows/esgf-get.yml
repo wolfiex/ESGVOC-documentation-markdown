@@ -16,17 +16,20 @@ jobs:
       with:
         fetch-depth: 0
     
-    # 1. Sparse checkout only the docs/source folder
+    # 1. Sparse checkout only the docs/source folder and keep it named "source"
     - name: Checkout docs/source from ESGF-vocab
       run: |
-        git init esgf-vocab
-        cd esgf-vocab
+        git init esgf-vocab-temp
+        cd esgf-vocab-temp
         git remote add origin https://github.com/ESGF/esgf-vocab.git
         git config core.sparseCheckout true
         echo "docs/source/*" >> .git/info/sparse-checkout
         git fetch --depth=1 origin main
         git checkout main
         cd ..
+        # Move only the source folder and keep its name
+        mv esgf-vocab-temp/docs/source ./source
+        rm -rf esgf-vocab-temp
 
     # 2. Setup Python
     - name: Set up Python
@@ -38,31 +41,26 @@ jobs:
         python -m pip install --upgrade pip
         pip install mkdocs mkdocstrings mkdocs-material
         pip install sphinx sphinx-markdown-builder myst-parser pymdown-extensions autodoc_pydantic myst-nb sphinx-tabs sphinx-copybutton
-
         pip install esgvoc
 
-    # 4. Copy the pulled docs into build folder
-    - name: Prepare docs folder
-      run: |
-        mkdir -p build_md
-        cp -R esgf-vocab/docs/source/* build_md/
+
 
     # 5. Update mkdocs.yml to include mkdocstrings plugin
-    - name: Update mkdocs.yml
-      run: |
-        if ! grep -q "mkdocstrings" mkdocs.yml; then
-          echo -e "\nplugins:\n  - mkdocstrings" >> mkdocs.yml
-        fi
+    # - name: Update mkdocs.yml
+    #   run: |
+    #     if ! grep -q "mkdocstrings" mkdocs.yml; then
+    #       echo -e "\nplugins:\n  - mkdocstrings" >> mkdocs.yml
+    #     fi
 
     # 6. Run Sphinx Markdown build
     - name: Generate Markdown from Sphinx
       run: |
-        sphinx-build -b markdown build_md/ build_md_out/
+        sphinx-build -b markdown source/ build_md/
         
     - name: Configure Git settings
       run: |
         git config --global user.name "github-actions[bot]"
-        git config --global user.email "<>"
+        git config --global user.email "actions@wcrp-cmip.org"
     - name: Stage changes
       run: git add .
     - name: Commit changes
