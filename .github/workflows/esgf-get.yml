@@ -10,16 +10,21 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    # 1. Checkout repo
-    - name: Checkout repository
-      uses: actions/checkout@v3
-      with:
-        fetch-depth: 0  # Needed to push commits
+    # 1. Sparse checkout only the docs/source folder
+    - name: Checkout docs/source from ESGF-vocab
+      run: |
+        git init esgf-vocab
+        cd esgf-vocab
+        git remote add origin https://github.com/ESGF/esgf-vocab.git
+        git config core.sparseCheckout true
+        echo "docs/source/*" >> .git/info/sparse-checkout
+        git fetch --depth=1 origin main
+        git checkout main
+        cd ..
 
     # 2. Setup Python
     - name: Set up Python
       uses: actions/setup-python@v4
-
 
     # 3. Install dependencies
     - name: Install dependencies
@@ -30,11 +35,11 @@ jobs:
         pip install myst-parser pymdown-extensions
         pip install esgvoc
 
-    # 4. Prepare docs folder
-    - name: Copy docs source
+    # 4. Copy the pulled docs into build folder
+    - name: Prepare docs folder
       run: |
         mkdir -p build_md
-        cp -R docs/source/* build_md/
+        cp -R esgf-vocab/docs/source/* build_md/
 
     # 5. Update mkdocs.yml to include mkdocstrings plugin
     - name: Update mkdocs.yml
@@ -46,17 +51,16 @@ jobs:
     # 6. Run Sphinx Markdown build
     - name: Generate Markdown from Sphinx
       run: |
-        sphinx-build -b markdown docs/ build_md/
+        sphinx-build -b markdown build_md/ build_md_out/
 
-    # 7. Check for changes and commit back
+    # 7. Commit and push generated Markdown back to your repo
     - name: Commit and push generated Markdown
       run: |
         git config --local user.name "github-actions[bot]"
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
-        git add build_md/ mkdocs.yml
+        git add build_md_out/ mkdocs.yml
         if git diff --cached --quiet; then
           echo "No changes to commit"
         else
           git commit -m "Update generated Markdown docs [skip ci]"
           git push origin HEAD:${{ github.ref }}
-        fi
