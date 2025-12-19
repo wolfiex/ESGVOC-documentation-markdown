@@ -1,0 +1,63 @@
+name: Build ESGF Docs
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 2 * * 0'  # every Sunday at 02:00 UTC
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    # 1. Checkout repo
+    - name: Checkout repository
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0  # Needed to push commits
+
+    # 2. Setup Python
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.10
+
+    # 3. Install dependencies
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install mkdocs mkdocstrings mkdocs-material
+        pip install sphinx sphinx-markdown-builder
+        pip install myst-parser pymdown-extensions
+        pip install esgvoc
+
+    # 4. Prepare docs folder
+    - name: Copy docs source
+      run: |
+        mkdir -p build_md
+        cp -R docs/source/* build_md/
+
+    # 5. Update mkdocs.yml to include mkdocstrings plugin
+    - name: Update mkdocs.yml
+      run: |
+        if ! grep -q "mkdocstrings" mkdocs.yml; then
+          echo -e "\nplugins:\n  - mkdocstrings" >> mkdocs.yml
+        fi
+
+    # 6. Run Sphinx Markdown build
+    - name: Generate Markdown from Sphinx
+      run: |
+        sphinx-build -b markdown docs/ build_md/
+
+    # 7. Check for changes and commit back
+    - name: Commit and push generated Markdown
+      run: |
+        git config --local user.name "github-actions[bot]"
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git add build_md/ mkdocs.yml
+        if git diff --cached --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "Update generated Markdown docs [skip ci]"
+          git push origin HEAD:${{ github.ref }}
+        fi
