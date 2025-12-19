@@ -10,6 +10,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+
+    - name: Checkout repository
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+    
     # 1. Sparse checkout only the docs/source folder
     - name: Checkout docs/source from ESGF-vocab
       run: |
@@ -56,8 +62,8 @@ jobs:
     # 7. Commit and push generated Markdown back to your repo
     - name: Commit and push generated Markdown
       run: |
-        git config --local user.name "github-actions[bot]"
-        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --global user.name "cmip-actions"
+        git config --global user.email "technical@wcrp-cmip.org"
         git add build_md_out/ mkdocs.yml
         if git diff --cached --quiet; then
           echo "No changes to commit"
