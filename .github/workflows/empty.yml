@@ -6,6 +6,7 @@ on:
 jobs:
   empty-job:
     runs-on: ubuntu-latest
+    permissions: {}
     steps:
       - name: Empty step
         run: echo "This is an empty workflow"
