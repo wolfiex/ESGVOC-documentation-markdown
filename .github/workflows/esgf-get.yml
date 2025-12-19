@@ -17,10 +17,9 @@ jobs:
         fetch-depth: 0  # Needed to push commits
 
     # 2. Setup Python
-    - name: Set up Python 3.15
+    - name: Set up Python
       uses: actions/setup-python@v4
-      with:
-        python-version: 3.15
+
 
     # 3. Install dependencies
     - name: Install dependencies
