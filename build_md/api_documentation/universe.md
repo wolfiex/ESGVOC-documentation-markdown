@@ -32,9 +32,9 @@ haven’t got any description.**
 * **Return type:**
   [list](https://docs.python.org/3/library/stdtypes.html#list)[[tuple](https://docs.python.org/3/library/stdtypes.html#tuple)[[str](https://docs.python.org/3/library/stdtypes.html#str), [dict](https://docs.python.org/3/library/stdtypes.html#dict)]]
 * **Raises:**
-  [**EsgvocValueError**](miscellaneous.md#esgvoc.core.exceptions.EsgvocValueError) – If the expression cannot be interpreted.
+  [**EsgvocValueError**](../source/api_documentation/miscellaneous.md#esgvoc.core.exceptions.EsgvocValueError) – If the expression cannot be interpreted.
 
-### esgvoc.api.universe.find_items_in_universe(expression: [str](https://docs.python.org/3/library/stdtypes.html#str), only_id: [bool](https://docs.python.org/3/library/functions.html#bool) = False, limit: [int](https://docs.python.org/3/library/functions.html#int) | [None](https://docs.python.org/3/library/constants.html#None) = None, offset: [int](https://docs.python.org/3/library/functions.html#int) | [None](https://docs.python.org/3/library/constants.html#None) = None) → [list](https://docs.python.org/3/library/stdtypes.html#list)[[Item](miscellaneous.md#esgvoc.api.search.Item)]
+### esgvoc.api.universe.find_items_in_universe(expression: [str](https://docs.python.org/3/library/stdtypes.html#str), only_id: [bool](https://docs.python.org/3/library/functions.html#bool) = False, limit: [int](https://docs.python.org/3/library/functions.html#int) | [None](https://docs.python.org/3/library/constants.html#None) = None, offset: [int](https://docs.python.org/3/library/functions.html#int) | [None](https://docs.python.org/3/library/constants.html#None) = None) → [list](https://docs.python.org/3/library/stdtypes.html#list)[[Item](../source/api_documentation/miscellaneous.md#esgvoc.api.search.Item)]
 
 Find items, at the moment terms and data descriptors, in the universe based on a full-text
 search defined by the given expression.
@@ -63,11 +63,11 @@ because they haven’t got any description.**
 * **Returns:**
   A list of item instances. Returns an empty list if no matches are found.
 * **Return type:**
-  [list](https://docs.python.org/3/library/stdtypes.html#list)[[Item](miscellaneous.md#esgvoc.api.search.Item)]
+  [list](https://docs.python.org/3/library/stdtypes.html#list)[[Item](../source/api_documentation/miscellaneous.md#esgvoc.api.search.Item)]
 * **Raises:**
-  [**EsgvocValueError**](miscellaneous.md#esgvoc.core.exceptions.EsgvocValueError) – If the expression cannot be interpreted.
+  [**EsgvocValueError**](../source/api_documentation/miscellaneous.md#esgvoc.core.exceptions.EsgvocValueError) – If the expression cannot be interpreted.
 
-### esgvoc.api.universe.find_terms_in_data_descriptor(expression: [str](https://docs.python.org/3/library/stdtypes.html#str), data_descriptor_id: [str](https://docs.python.org/3/library/stdtypes.html#str), only_id: [bool](https://docs.python.org/3/library/functions.html#bool) = False, limit: [int](https://docs.python.org/3/library/functions.html#int) | [None](https://docs.python.org/3/library/constants.html#None) = None, offset: [int](https://docs.python.org/3/library/functions.html#int) | [None](https://docs.python.org/3/library/constants.html#None) = None, selected_term_fields: [Iterable](https://docs.python.org/3/library/typing.html#typing.Iterable)[[str](https://docs.python.org/3/library/stdtypes.html#str)] | [None](https://docs.python.org/3/library/constants.html#None) = None) → [list](https://docs.python.org/3/library/stdtypes.html#list)[[DataDescriptor](data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)]
+### esgvoc.api.universe.find_terms_in_data_descriptor(expression: [str](https://docs.python.org/3/library/stdtypes.html#str), data_descriptor_id: [str](https://docs.python.org/3/library/stdtypes.html#str), only_id: [bool](https://docs.python.org/3/library/functions.html#bool) = False, limit: [int](https://docs.python.org/3/library/functions.html#int) | [None](https://docs.python.org/3/library/constants.html#None) = None, offset: [int](https://docs.python.org/3/library/functions.html#int) | [None](https://docs.python.org/3/library/constants.html#None) = None, selected_term_fields: [Iterable](https://docs.python.org/3/library/typing.html#typing.Iterable)[[str](https://docs.python.org/3/library/stdtypes.html#str)] | [None](https://docs.python.org/3/library/constants.html#None) = None) → [list](https://docs.python.org/3/library/stdtypes.html#list)[[DataDescriptor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)]
 
 Find terms in the given data descriptor based on a full-text search defined by the given expression.
 The expression can be composed of one or multiple keywords.
@@ -97,11 +97,11 @@ However, if only_id is True (default is False), the search is restricted to the 
 * **Returns:**
   A list of term instances. Returns an empty list if no matches are found.
 * **Return type:**
-  [list](https://docs.python.org/3/library/stdtypes.html#list)[[DataDescriptor](data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)]
+  [list](https://docs.python.org/3/library/stdtypes.html#list)[[DataDescriptor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)]
 * **Raises:**
-  [**EsgvocValueError**](miscellaneous.md#esgvoc.core.exceptions.EsgvocValueError) – If the expression cannot be interpreted.
+  [**EsgvocValueError**](../source/api_documentation/miscellaneous.md#esgvoc.core.exceptions.EsgvocValueError) – If the expression cannot be interpreted.
 
-### esgvoc.api.universe.find_terms_in_universe(expression: [str](https://docs.python.org/3/library/stdtypes.html#str), only_id: [bool](https://docs.python.org/3/library/functions.html#bool) = False, limit: [int](https://docs.python.org/3/library/functions.html#int) | [None](https://docs.python.org/3/library/constants.html#None) = None, offset: [int](https://docs.python.org/3/library/functions.html#int) | [None](https://docs.python.org/3/library/constants.html#None) = None, selected_term_fields: [Iterable](https://docs.python.org/3/library/typing.html#typing.Iterable)[[str](https://docs.python.org/3/library/stdtypes.html#str)] | [None](https://docs.python.org/3/library/constants.html#None) = None) → [list](https://docs.python.org/3/library/stdtypes.html#list)[[DataDescriptor](data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)]
+### esgvoc.api.universe.find_terms_in_universe(expression: [str](https://docs.python.org/3/library/stdtypes.html#str), only_id: [bool](https://docs.python.org/3/library/functions.html#bool) = False, limit: [int](https://docs.python.org/3/library/functions.html#int) | [None](https://docs.python.org/3/library/constants.html#None) = None, offset: [int](https://docs.python.org/3/library/functions.html#int) | [None](https://docs.python.org/3/library/constants.html#None) = None, selected_term_fields: [Iterable](https://docs.python.org/3/library/typing.html#typing.Iterable)[[str](https://docs.python.org/3/library/stdtypes.html#str)] | [None](https://docs.python.org/3/library/constants.html#None) = None) → [list](https://docs.python.org/3/library/stdtypes.html#list)[[DataDescriptor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)]
 
 Find terms in the universe based on a full-text search defined by the given expression.
 The expression can be composed of one or multiple keywords.
@@ -128,9 +128,9 @@ However, if only_id is True (default is False), the search is restricted to the 
 * **Returns:**
   A list of term instances. Returns an empty list if no matches are found.
 * **Return type:**
-  [list](https://docs.python.org/3/library/stdtypes.html#list)[[DataDescriptor](data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)]
+  [list](https://docs.python.org/3/library/stdtypes.html#list)[[DataDescriptor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)]
 * **Raises:**
-  [**EsgvocValueError**](miscellaneous.md#esgvoc.core.exceptions.EsgvocValueError) – If the expression cannot be interpreted.
+  [**EsgvocValueError**](../source/api_documentation/miscellaneous.md#esgvoc.core.exceptions.EsgvocValueError) – If the expression cannot be interpreted.
 
 ### esgvoc.api.universe.get_all_data_descriptors_in_universe() → [list](https://docs.python.org/3/library/stdtypes.html#list)[[str](https://docs.python.org/3/library/stdtypes.html#str)]
 
@@ -141,7 +141,7 @@ Gets all the data descriptors of the universe.
 * **Return type:**
   [list](https://docs.python.org/3/library/stdtypes.html#list)[[str](https://docs.python.org/3/library/stdtypes.html#str)]
 
-### esgvoc.api.universe.get_all_terms_in_data_descriptor(data_descriptor_id: [str](https://docs.python.org/3/library/stdtypes.html#str), selected_term_fields: [Iterable](https://docs.python.org/3/library/typing.html#typing.Iterable)[[str](https://docs.python.org/3/library/stdtypes.html#str)] | [None](https://docs.python.org/3/library/constants.html#None) = None) → [list](https://docs.python.org/3/library/stdtypes.html#list)[[DataDescriptor](data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)]
+### esgvoc.api.universe.get_all_terms_in_data_descriptor(data_descriptor_id: [str](https://docs.python.org/3/library/stdtypes.html#str), selected_term_fields: [Iterable](https://docs.python.org/3/library/typing.html#typing.Iterable)[[str](https://docs.python.org/3/library/stdtypes.html#str)] | [None](https://docs.python.org/3/library/constants.html#None) = None) → [list](https://docs.python.org/3/library/stdtypes.html#list)[[DataDescriptor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)]
 
 Gets all the terms of the given data descriptor.
 This function performs an exact match on the data_descriptor_id and does not search
@@ -154,9 +154,9 @@ If the provided data_descriptor_id is not found, the function returns an empty l
 * **Returns:**
   a list of term instances. Returns an empty list if no matches are found.
 * **Return type:**
-  [list](https://docs.python.org/3/library/stdtypes.html#list)[[DataDescriptor](data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)]
+  [list](https://docs.python.org/3/library/stdtypes.html#list)[[DataDescriptor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)]
 
-### esgvoc.api.universe.get_all_terms_in_universe(selected_term_fields: [Iterable](https://docs.python.org/3/library/typing.html#typing.Iterable)[[str](https://docs.python.org/3/library/stdtypes.html#str)] | [None](https://docs.python.org/3/library/constants.html#None) = None) → [list](https://docs.python.org/3/library/stdtypes.html#list)[[DataDescriptor](data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)]
+### esgvoc.api.universe.get_all_terms_in_universe(selected_term_fields: [Iterable](https://docs.python.org/3/library/typing.html#typing.Iterable)[[str](https://docs.python.org/3/library/stdtypes.html#str)] | [None](https://docs.python.org/3/library/constants.html#None) = None) → [list](https://docs.python.org/3/library/stdtypes.html#list)[[DataDescriptor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)]
 
 Gets all the terms of the universe.
 Terms are unique within a data descriptor but may have some synonyms in the universe.
@@ -166,7 +166,7 @@ Terms are unique within a data descriptor but may have some synonyms in the univ
 * **Returns:**
   A list of term instances.
 * **Return type:**
-  [list](https://docs.python.org/3/library/stdtypes.html#list)[[DataDescriptor](data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)]
+  [list](https://docs.python.org/3/library/stdtypes.html#list)[[DataDescriptor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)]
 
 ### esgvoc.api.universe.get_data_descriptor_in_universe(data_descriptor_id: [str](https://docs.python.org/3/library/stdtypes.html#str)) → [tuple](https://docs.python.org/3/library/stdtypes.html#tuple)[[str](https://docs.python.org/3/library/stdtypes.html#str), [dict](https://docs.python.org/3/library/stdtypes.html#dict)] | [None](https://docs.python.org/3/library/constants.html#None)
 
@@ -183,7 +183,7 @@ If the provided data_descriptor_id is not found, the function returns None.
 * **Return type:**
   [tuple](https://docs.python.org/3/library/stdtypes.html#tuple)[[str](https://docs.python.org/3/library/stdtypes.html#str), [dict](https://docs.python.org/3/library/stdtypes.html#dict)] | None
 
-### esgvoc.api.universe.get_term_in_data_descriptor(data_descriptor_id: [str](https://docs.python.org/3/library/stdtypes.html#str), term_id: [str](https://docs.python.org/3/library/stdtypes.html#str), selected_term_fields: [Iterable](https://docs.python.org/3/library/typing.html#typing.Iterable)[[str](https://docs.python.org/3/library/stdtypes.html#str)] | [None](https://docs.python.org/3/library/constants.html#None) = None) → [DataDescriptor](data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor) | [None](https://docs.python.org/3/library/constants.html#None)
+### esgvoc.api.universe.get_term_in_data_descriptor(data_descriptor_id: [str](https://docs.python.org/3/library/stdtypes.html#str), term_id: [str](https://docs.python.org/3/library/stdtypes.html#str), selected_term_fields: [Iterable](https://docs.python.org/3/library/typing.html#typing.Iterable)[[str](https://docs.python.org/3/library/stdtypes.html#str)] | [None](https://docs.python.org/3/library/constants.html#None) = None) → [DataDescriptor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor) | [None](https://docs.python.org/3/library/constants.html#None)
 
 Returns the term, in the given data descriptor, whose id corresponds exactly to the given term id.
 This function performs an exact match on the term_id and the data_descriptor_id and does
@@ -197,9 +197,9 @@ If the provided term_id is not found, the function returns None.
 * **Returns:**
   A term instance. Returns None if no match is found.
 * **Return type:**
-  [DataDescriptor](data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor) | None
+  [DataDescriptor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor) | None
 
-### esgvoc.api.universe.get_term_in_universe(term_id: [str](https://docs.python.org/3/library/stdtypes.html#str), selected_term_fields: [Iterable](https://docs.python.org/3/library/typing.html#typing.Iterable)[[str](https://docs.python.org/3/library/stdtypes.html#str)] | [None](https://docs.python.org/3/library/constants.html#None) = None) → [DataDescriptor](data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor) | [None](https://docs.python.org/3/library/constants.html#None)
+### esgvoc.api.universe.get_term_in_universe(term_id: [str](https://docs.python.org/3/library/stdtypes.html#str), selected_term_fields: [Iterable](https://docs.python.org/3/library/typing.html#typing.Iterable)[[str](https://docs.python.org/3/library/stdtypes.html#str)] | [None](https://docs.python.org/3/library/constants.html#None) = None) → [DataDescriptor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor) | [None](https://docs.python.org/3/library/constants.html#None)
 
 Returns the first occurrence of the terms, in the universe, whose id corresponds exactly to
 the given term id.
@@ -213,4 +213,4 @@ for similar or related terms. If the provided term_id is not found, the function
 * **Returns:**
   A term instance. Returns None if no match is found.
 * **Return type:**
-  [DataDescriptor](data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor) | None
+  [DataDescriptor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor) | None

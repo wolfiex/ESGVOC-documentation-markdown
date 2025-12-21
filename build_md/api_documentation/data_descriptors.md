@@ -6,7 +6,7 @@
 
 ### *Pydantic model* esgvoc.api.data_descriptors.Activity
 
-Bases: [`PlainTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
+Bases: [`PlainTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
 
 An ‘activity’ refers to a coordinated set of modeling experiments designed to address specific     scientific questions or objectives. Each activity is focused on different aspects of climate     science and utilizes various models to study a wide range of climate phenomena.     Activities are often organized around key research themes and may involve multiple experiments,     scenarios, and model configurations.
 
@@ -80,12 +80,12 @@ The data descriptor to which the term belongs.
 
 #### *field* url *: [str](https://docs.python.org/3/library/stdtypes.html#str) | [None](https://docs.python.org/3/library/constants.html#None)* *[Required]*
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -95,7 +95,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.Archive
 
-Bases: [`PlainTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
+Bases: [`PlainTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
 
 <p><details  class="autodoc_pydantic_collapsable_json">
 <summary>Show JSON schema</summary>
@@ -138,12 +138,12 @@ The identifier of the terms.
 
 The data descriptor to which the term belongs.
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -153,7 +153,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.AreaLabel
 
-Bases: [`PlainTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
+Bases: [`PlainTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
 
 Area sampling label.
 
@@ -163,7 +163,7 @@ For a list of allowed values, see
 e.g. some summary of the values in [https://github.com/WCRP-CMIP/WCRP-universe/tree/esgvoc/area_label](https://github.com/WCRP-CMIP/WCRP-universe/tree/esgvoc/area_label).]
 
 This label is used as the area component of a branded variable’s suffix
-(see [`BrandedSuffix`](#esgvoc.api.data_descriptors.BrandedSuffix)).
+(see [`BrandedSuffix`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.BrandedSuffix)).
 By definition, the area label must be consistent with the branded suffix.
 area labels must not contain dashes
 (as the dash is used as a separator when constructing the branded suffix).
@@ -224,12 +224,12 @@ The identifier of the terms.
 
 The data descriptor to which the term belongs.
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -239,7 +239,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.BrandedSuffix
 
-Bases: [`CompositeTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.CompositeTermDataDescriptor)
+Bases: [`CompositeTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.CompositeTermDataDescriptor)
 
 The suffix of a branded variable.
 
@@ -252,10 +252,10 @@ and area masking of the variable.
 
 The suffix is composed of the following components:
 
-1. [`TemporalLabel`](#esgvoc.api.data_descriptors.TemporalLabel)
-2. [`VerticalLabel`](#esgvoc.api.data_descriptors.VerticalLabel)
-3. [`HorizontalLabel`](#esgvoc.api.data_descriptors.HorizontalLabel)
-4. [`AreaLabel`](#esgvoc.api.data_descriptors.AreaLabel)
+1. [`TemporalLabel`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.TemporalLabel)
+2. [`VerticalLabel`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.VerticalLabel)
+3. [`HorizontalLabel`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.HorizontalLabel)
+4. [`AreaLabel`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.AreaLabel)
 
 These components are separated by a separator to create the branded suffix.
 
@@ -350,7 +350,7 @@ These components are separated by a separator to create the branded suffix.
 
 The identifier of the terms.
 
-#### *field* parts *: [list](https://docs.python.org/3/library/stdtypes.html#list)[[CompositeTermPart](#esgvoc.api.data_descriptors.data_descriptor.CompositeTermPart)]* *[Required]*
+#### *field* parts *: [list](https://docs.python.org/3/library/stdtypes.html#list)[[CompositeTermPart](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.CompositeTermPart)]* *[Required]*
 
 The components.
 
@@ -362,12 +362,12 @@ The components separator character.
 
 The data descriptor to which the term belongs.
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -377,14 +377,14 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.BrandedVariable
 
-Bases: [`CompositeTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.CompositeTermDataDescriptor)
+Bases: [`CompositeTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.CompositeTermDataDescriptor)
 
 A climate-related quantity or measurement, including information about sampling.
 
 The concept of a branded variable was introduced in CMIP7.
 A branded variable is composed of two parts.
-The first part is the root variable (see [`Variable`](#esgvoc.api.data_descriptors.Variable)).
-The second is the suffix (see [`BrandedSuffix`](#esgvoc.api.data_descriptors.BrandedSuffix)).
+The first part is the root variable (see [`Variable`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.Variable)).
+The second is the suffix (see [`BrandedSuffix`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.BrandedSuffix)).
 
 For further details on the development of branded variables,
 see [this paper draft]([https://docs.google.com/document/d/19jzecgymgiiEsTDzaaqeLP6pTvLT-NzCMaq-wu-QoOc/edit?pli=1&tab=t.0](https://docs.google.com/document/d/19jzecgymgiiEsTDzaaqeLP6pTvLT-NzCMaq-wu-QoOc/edit?pli=1&tab=t.0)).
@@ -480,7 +480,7 @@ see [this paper draft]([https://docs.google.com/document/d/19jzecgymgiiEsTDzaaqe
 
 The identifier of the terms.
 
-#### *field* parts *: [list](https://docs.python.org/3/library/stdtypes.html#list)[[CompositeTermPart](#esgvoc.api.data_descriptors.data_descriptor.CompositeTermPart)]* *[Required]*
+#### *field* parts *: [list](https://docs.python.org/3/library/stdtypes.html#list)[[CompositeTermPart](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.CompositeTermPart)]* *[Required]*
 
 The components.
 
@@ -492,12 +492,12 @@ The components separator character.
 
 The data descriptor to which the term belongs.
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -507,7 +507,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.Calendar
 
-Bases: [`PlainTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
+Bases: [`PlainTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
 
 <p><details  class="autodoc_pydantic_collapsable_json">
 <summary>Show JSON schema</summary>
@@ -557,12 +557,12 @@ The identifier of the terms.
 
 The data descriptor to which the term belongs.
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -572,7 +572,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.CitationUrl
 
-Bases: [`PatternTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.PatternTermDataDescriptor)
+Bases: [`PatternTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PatternTermDataDescriptor)
 
 <p><details  class="autodoc_pydantic_collapsable_json">
 <summary>Show JSON schema</summary>
@@ -617,12 +617,12 @@ The regular expression.
 
 The data descriptor to which the term belongs.
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -632,7 +632,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.ComponentType
 
-Bases: [`PlainTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
+Bases: [`PlainTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
 
 <p><details  class="autodoc_pydantic_collapsable_json">
 <summary>Show JSON schema</summary>
@@ -689,12 +689,12 @@ The data descriptor to which the term belongs.
 
 #### *field* ui_label *: [str](https://docs.python.org/3/library/stdtypes.html#str)* *[Required]*
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -704,7 +704,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.Consortium
 
-Bases: [`PlainTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
+Bases: [`PlainTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
 
 <p><details  class="autodoc_pydantic_collapsable_json">
 <summary>Show JSON schema</summary>
@@ -890,12 +890,12 @@ The data descriptor to which the term belongs.
 
 #### *field* validation_method *: [str](https://docs.python.org/3/library/stdtypes.html#str)* *= 'list'*
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -905,7 +905,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.Contact
 
-Bases: [`PatternTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.PatternTermDataDescriptor)
+Bases: [`PatternTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PatternTermDataDescriptor)
 
 <p><details  class="autodoc_pydantic_collapsable_json">
 <summary>Show JSON schema</summary>
@@ -950,12 +950,12 @@ The regular expression.
 
 The data descriptor to which the term belongs.
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -965,7 +965,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.Convention
 
-Bases: [`PlainTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
+Bases: [`PlainTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
 
 <p><details  class="autodoc_pydantic_collapsable_json">
 <summary>Show JSON schema</summary>
@@ -1022,12 +1022,12 @@ The identifier of the terms.
 
 The data descriptor to which the term belongs.
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -1037,7 +1037,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.Coordinate
 
-Bases: [`PlainTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
+Bases: [`PlainTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
 
 Native vertical grid coordinate type. The coordinate types are all CF standard names (except where indicated) with the same definitions. See section 5.2 Native vertical grid properties.
 Options for the native vertical grid Coordinate property:
@@ -1133,12 +1133,12 @@ The identifier of the terms.
 
 The data descriptor to which the term belongs.
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -1148,7 +1148,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.CreationDate
 
-Bases: [`PatternTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.PatternTermDataDescriptor)
+Bases: [`PatternTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PatternTermDataDescriptor)
 
 <p><details  class="autodoc_pydantic_collapsable_json">
 <summary>Show JSON schema</summary>
@@ -1193,12 +1193,12 @@ The regular expression.
 
 The data descriptor to which the term belongs.
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -1208,7 +1208,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.DataSpecsVersion
 
-Bases: [`PatternTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.PatternTermDataDescriptor)
+Bases: [`PatternTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PatternTermDataDescriptor)
 
 <p><details  class="autodoc_pydantic_collapsable_json">
 <summary>Show JSON schema</summary>
@@ -1253,12 +1253,12 @@ The regular expression.
 
 The data descriptor to which the term belongs.
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -1268,7 +1268,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.Date
 
-Bases: [`PatternTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.PatternTermDataDescriptor)
+Bases: [`PatternTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PatternTermDataDescriptor)
 
 <p><details  class="autodoc_pydantic_collapsable_json">
 <summary>Show JSON schema</summary>
@@ -1313,12 +1313,12 @@ The regular expression.
 
 The data descriptor to which the term belongs.
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -1328,7 +1328,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.DirectoryDate
 
-Bases: [`PatternTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.PatternTermDataDescriptor)
+Bases: [`PatternTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PatternTermDataDescriptor)
 
 <p><details  class="autodoc_pydantic_collapsable_json">
 <summary>Show JSON schema</summary>
@@ -1373,12 +1373,12 @@ The regular expression.
 
 The data descriptor to which the term belongs.
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -1388,7 +1388,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.EMDModelComponent
 
-Bases: [`PlainTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
+Bases: [`PlainTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
 
 Properties that provide a description of individual model components.
 Eight model components are defined that somewhat independently account for different sets of interactive processes: aerosol, atmosphere, atmospheric chemistry, land surface, land ice, ocean, ocean biogeochemistry, and sea ice. The interactive processes covered by each  component are described in more detail in section 7.1. Model Component Type CV.
@@ -1975,15 +1975,15 @@ The name of the model component.
 * **Validated by:**
   - `validate_non_empty_strings`
 
-#### *field* native_horizontal_grid *: [NativeHorizontalGrid](#esgvoc.api.data_descriptors.NativeHorizontalGrid)* *[Required]*
+#### *field* native_horizontal_grid *: [NativeHorizontalGrid](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.NativeHorizontalGrid)* *[Required]*
 
 A standardised description of the model component’s horizontal grid.
 
-#### *field* native_vertical_grid *: [NativeVerticalGrid](#esgvoc.api.data_descriptors.NativeVerticalGrid)* *[Required]*
+#### *field* native_vertical_grid *: [NativeVerticalGrid](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.NativeVerticalGrid)* *[Required]*
 
 A standardised description of the model component’s vertical grid.
 
-#### *field* references *: [List](https://docs.python.org/3/library/typing.html#typing.List)[[Reference](#esgvoc.api.data_descriptors.Reference)]* *[Required]*
+#### *field* references *: [List](https://docs.python.org/3/library/typing.html#typing.List)[[Reference](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.Reference)]* *[Required]*
 
 One or more references to published work for the model component.
 
@@ -2006,16 +2006,16 @@ Validate that a component cannot be both embedded and coupled.
 
 Validate that a component cannot be both embedded and coupled.
 
-#### *validator* validate_non_empty_strings  *»*  *description* *,* *component* *,* *family* *,* *code_base* *,* *name*
+#### *validator* validate_non_empty_strings  *»*  *name* *,* *code_base* *,* *component* *,* *description* *,* *family*
 
 Validate that string fields are not empty.
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -2025,7 +2025,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.EMDResolution
 
-Bases: [`PlainTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
+Bases: [`PlainTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
 
 The nominal resolution (in km) characterises the resolution of a model’s native horizontal grid. See section 5.1 Native horizontal grid properties.
 Options for the native horizontal grid nominal resolution property are defined in the following table as a function of the value of the mean resolution km property:
@@ -2117,12 +2117,12 @@ The identifier of the terms.
 
 The data descriptor to which the term belongs.
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -2132,7 +2132,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.Experiment
 
-Bases: [`PlainTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
+Bases: [`PlainTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
 
 An ‘experiment’ refers to a specific, controlled simulation conducted using climate models to     investigate particular aspects of the Earth’s climate system. These experiments are designed     with set parameters, such as initial conditions, external forcings (like greenhouse gas     concentrations or solar radiation), and duration, to explore and understand climate behavior     under various scenarios and conditions.
 
@@ -2347,12 +2347,12 @@ The identifier of the terms.
 
 The data descriptor to which the term belongs.
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -2362,7 +2362,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.ForcingIndex
 
-Bases: [`PatternTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.PatternTermDataDescriptor)
+Bases: [`PatternTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PatternTermDataDescriptor)
 
 <p><details  class="autodoc_pydantic_collapsable_json">
 <summary>Show JSON schema</summary>
@@ -2407,12 +2407,12 @@ The regular expression.
 
 The data descriptor to which the term belongs.
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -2422,7 +2422,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.Frequency
 
-Bases: [`PlainTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
+Bases: [`PlainTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
 
 <p><details  class="autodoc_pydantic_collapsable_json">
 <summary>Show JSON schema</summary>
@@ -2493,12 +2493,12 @@ The data descriptor to which the term belongs.
 
 #### *field* unit *: [str](https://docs.python.org/3/library/stdtypes.html#str)* *[Required]*
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -2508,7 +2508,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.FurtherInfoUrl
 
-Bases: [`PatternTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.PatternTermDataDescriptor)
+Bases: [`PatternTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PatternTermDataDescriptor)
 
 <p><details  class="autodoc_pydantic_collapsable_json">
 <summary>Show JSON schema</summary>
@@ -2553,12 +2553,12 @@ The regular expression.
 
 The data descriptor to which the term belongs.
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -2568,7 +2568,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.GridArrangement
 
-Bases: [`PlainTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
+Bases: [`PlainTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
 
 Native horizontal grid Arakawa arrangement types. The Arakawa grid arrangement describes how orthogonal physical quantities (especially mass-related and velocity-related quantities) are represented and computed on the grid. See, for example, Collins et al. (2013) for a description of each grid type. See section 5.1 Native horizontal grid properties.
 
@@ -2614,12 +2614,12 @@ The identifier of the terms.
 
 The data descriptor to which the term belongs.
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -2629,7 +2629,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.GridLabel
 
-Bases: [`PlainTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
+Bases: [`PlainTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
 
 <p><details  class="autodoc_pydantic_collapsable_json">
 <summary>Show JSON schema</summary>
@@ -2700,12 +2700,12 @@ The identifier of the terms.
 
 The data descriptor to which the term belongs.
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -2715,7 +2715,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.GridMapping
 
-Bases: [`PlainTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
+Bases: [`PlainTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
 
 <p><details  class="autodoc_pydantic_collapsable_json">
 <summary>Show JSON schema</summary>
@@ -2758,12 +2758,12 @@ The identifier of the terms.
 
 The data descriptor to which the term belongs.
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -2773,7 +2773,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.HorizontalLabel
 
-Bases: [`PlainTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
+Bases: [`PlainTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
 
 Horizontal sampling label.
 
@@ -2783,7 +2783,7 @@ For a list of allowed values, see
 e.g. some summary of the values in [https://github.com/WCRP-CMIP/WCRP-universe/tree/esgvoc/horizontal_label](https://github.com/WCRP-CMIP/WCRP-universe/tree/esgvoc/horizontal_label).]
 
 This label is used as the horizontal component of a branded variable’s suffix
-(see [`BrandedSuffix`](#esgvoc.api.data_descriptors.BrandedSuffix)).
+(see [`BrandedSuffix`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.BrandedSuffix)).
 By definition, the horizontal label must be consistent with the branded suffix.
 Horizontal labels must not contain the separator used when constructing the branded suffix.
 
@@ -2843,12 +2843,12 @@ The identifier of the terms.
 
 The data descriptor to which the term belongs.
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -2858,7 +2858,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.InitialisationIndex
 
-Bases: [`PatternTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.PatternTermDataDescriptor)
+Bases: [`PatternTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PatternTermDataDescriptor)
 
 <p><details  class="autodoc_pydantic_collapsable_json">
 <summary>Show JSON schema</summary>
@@ -2903,12 +2903,12 @@ The regular expression.
 
 The data descriptor to which the term belongs.
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -2918,7 +2918,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.Institution
 
-Bases: [`PlainTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
+Bases: [`PlainTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
 
 An registered institution for WCRP modelisation MIP.
 
@@ -3045,12 +3045,12 @@ The data descriptor to which the term belongs.
 
 #### *field* url *: [list](https://docs.python.org/3/library/stdtypes.html#list)[[str](https://docs.python.org/3/library/stdtypes.html#str)]* *[Optional]*
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -3060,14 +3060,14 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.KnownBrandedVariable
 
-Bases: [`PlainTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
+Bases: [`PlainTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
 
 A climate-related quantity or measurement, including information about sampling.
 
 The concept of a branded variable was introduced in CMIP7.
 A branded variable is composed of two parts.
-The first part is the root variable (see [`Variable`](#esgvoc.api.data_descriptors.Variable)).
-The second is the suffix (see [`BrandedSuffix`](#esgvoc.api.data_descriptors.BrandedSuffix)).
+The first part is the root variable (see [`Variable`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.Variable)).
+The second is the suffix (see [`BrandedSuffix`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.BrandedSuffix)).
 
 For further details on the development of branded variables,
 see [this paper draft]([https://docs.google.com/document/d/19jzecgymgiiEsTDzaaqeLP6pTvLT-NzCMaq-wu-QoOc/edit?pli=1&tab=t.0](https://docs.google.com/document/d/19jzecgymgiiEsTDzaaqeLP6pTvLT-NzCMaq-wu-QoOc/edit?pli=1&tab=t.0)).
@@ -3297,12 +3297,12 @@ Variable root name, e.g., ‘ta’
 
 Vertical label, e.g., ‘p19’
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -3312,7 +3312,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.License
 
-Bases: [`PlainTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
+Bases: [`PlainTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
 
 <p><details  class="autodoc_pydantic_collapsable_json">
 <summary>Show JSON schema</summary>
@@ -3390,12 +3390,12 @@ The data descriptor to which the term belongs.
 
 #### *field* url *: [str](https://docs.python.org/3/library/stdtypes.html#str) | [None](https://docs.python.org/3/library/constants.html#None)* *[Required]*
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -3405,7 +3405,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.MemberId
 
-Bases: [`CompositeTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.CompositeTermDataDescriptor)
+Bases: [`CompositeTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.CompositeTermDataDescriptor)
 
 The member_id uniquely identifies a specific model simulation within an experiment. It is created by combining the sub_experiment, which describes the setup or timing of the simulation (like a specific start year), and the variant_label, which details the configuration of the model (including initial conditions, physics, and forcings). Together, they form a code like s1960-r1i1p1f1. This allows users to distinguish between different ensemble members and understand how each run differs from others within the same experiment.
 
@@ -3500,7 +3500,7 @@ The member_id uniquely identifies a specific model simulation within an experime
 
 The identifier of the terms.
 
-#### *field* parts *: [list](https://docs.python.org/3/library/stdtypes.html#list)[[CompositeTermPart](#esgvoc.api.data_descriptors.data_descriptor.CompositeTermPart)]* *[Required]*
+#### *field* parts *: [list](https://docs.python.org/3/library/stdtypes.html#list)[[CompositeTermPart](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.CompositeTermPart)]* *[Required]*
 
 The components.
 
@@ -3512,12 +3512,12 @@ The components separator character.
 
 The data descriptor to which the term belongs.
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -3527,7 +3527,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.MipEra
 
-Bases: [`PlainTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
+Bases: [`PlainTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
 
 <p><details  class="autodoc_pydantic_collapsable_json">
 <summary>Show JSON schema</summary>
@@ -3598,12 +3598,12 @@ The data descriptor to which the term belongs.
 
 #### *field* url *: [str](https://docs.python.org/3/library/stdtypes.html#str)* *[Required]*
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -3613,7 +3613,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.Model
 
-Bases: [`PlainTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
+Bases: [`PlainTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
 
 The following properties provide a top-level description of the model as whole.
 In the property examples, underlined and italicised values are taken from section 7. Controlled vocabularies.
@@ -4244,7 +4244,7 @@ The top-level model’s ‘family’ name. Use ‘none’ to indicate that there
 
 The identifier of the terms.
 
-#### *field* model_components *: [List](https://docs.python.org/3/library/typing.html#typing.List)[[EMDModelComponent](#esgvoc.api.data_descriptors.EMDModelComponent)] | [None](https://docs.python.org/3/library/constants.html#None)* *= None*
+#### *field* model_components *: [List](https://docs.python.org/3/library/typing.html#typing.List)[[EMDModelComponent](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.EMDModelComponent)] | [None](https://docs.python.org/3/library/constants.html#None)* *= None*
 
 The model components that dynamically simulate processes within the model.
 
@@ -4271,7 +4271,7 @@ The components that are represented in the top-level model with prescribed value
 * **Validated by:**
   - `validate_component_lists`
 
-#### *field* references *: [List](https://docs.python.org/3/library/typing.html#typing.List)[[Reference](#esgvoc.api.data_descriptors.Reference)]* *[Required]*
+#### *field* references *: [List](https://docs.python.org/3/library/typing.html#typing.List)[[Reference](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.Reference)]* *[Required]*
 
 One or more references to published work for the top-level model as a whole.
 
@@ -4294,7 +4294,7 @@ The data descriptor to which the term belongs.
 
 Validate calendar list contains valid strings.
 
-#### *validator* validate_component_lists  *»*  *dynamic_components* *,* *prescribed_components* *,* *omitted_components*
+#### *validator* validate_component_lists  *»*  *prescribed_components* *,* *omitted_components* *,* *dynamic_components*
 
 Validate component lists contain valid strings.
 
@@ -4302,12 +4302,12 @@ Validate component lists contain valid strings.
 
 Validate that string fields are not empty.
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -4317,7 +4317,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.ModelComponent
 
-Bases: [`PlainTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
+Bases: [`PlainTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
 
 <p><details  class="autodoc_pydantic_collapsable_json">
 <summary>Show JSON schema</summary>
@@ -4397,12 +4397,12 @@ The data descriptor to which the term belongs.
 
 #### *field* version *: [int](https://docs.python.org/3/library/functions.html#int)* *[Required]*
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -4412,7 +4412,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.NativeHorizontalGrid
 
-Bases: [`PlainTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
+Bases: [`PlainTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
 
 The model component’s native horizontal grid is described by a subset of the following properties:
 
@@ -4843,7 +4843,7 @@ The data descriptor to which the term belongs.
 
 Validate that mean resolution is within the resolution range.
 
-#### *validator* validate_required_strings  *»*  *temporal_refinement* *,* *region* *,* *arrangement* *,* *grid* *,* *grid_mapping* *,* *nominal_resolution*
+#### *validator* validate_required_strings  *»*  *nominal_resolution* *,* *grid_mapping* *,* *arrangement* *,* *region* *,* *temporal_refinement* *,* *grid*
 
 Validate that required string fields are not empty.
 
@@ -4855,12 +4855,12 @@ Validate that resolution range has exactly 2 values and min <= max.
 
 Validate that horizontal_units is provided when resolution values are set.
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -4870,7 +4870,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.NativeVerticalGrid
 
-Bases: [`DataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)
+Bases: [`DataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)
 
 4.2. Vertical grid
 The model component’s native vertical grid is described by a subset of the following properties:
@@ -5136,7 +5136,7 @@ Validate that n_z_range has exactly 2 values and min <= max.
 
 Validate that vertical_units is provided when thickness/top_of_model values are set.
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept a data descriptor visitor.
 
@@ -5144,7 +5144,7 @@ Accept a data descriptor visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.ObsType
 
-Bases: [`PlainTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
+Bases: [`PlainTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
 
 <p><details  class="autodoc_pydantic_collapsable_json">
 <summary>Show JSON schema</summary>
@@ -5194,12 +5194,12 @@ The identifier of the terms.
 
 The data descriptor to which the term belongs.
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -5209,7 +5209,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.Organisation
 
-Bases: [`PlainTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
+Bases: [`PlainTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
 
 <p><details  class="autodoc_pydantic_collapsable_json">
 <summary>Show JSON schema</summary>
@@ -5252,12 +5252,12 @@ The identifier of the terms.
 
 The data descriptor to which the term belongs.
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -5267,7 +5267,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.PhysicIndex
 
-Bases: [`PatternTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.PatternTermDataDescriptor)
+Bases: [`PatternTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PatternTermDataDescriptor)
 
 <p><details  class="autodoc_pydantic_collapsable_json">
 <summary>Show JSON schema</summary>
@@ -5312,12 +5312,12 @@ The regular expression.
 
 The data descriptor to which the term belongs.
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -5327,7 +5327,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.Product
 
-Bases: [`PlainTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
+Bases: [`PlainTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
 
 <p><details  class="autodoc_pydantic_collapsable_json">
 <summary>Show JSON schema</summary>
@@ -5384,12 +5384,12 @@ The identifier of the terms.
 
 The data descriptor to which the term belongs.
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -5399,7 +5399,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.PublicationStatus
 
-Bases: [`PlainTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
+Bases: [`PlainTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
 
 <p><details  class="autodoc_pydantic_collapsable_json">
 <summary>Show JSON schema</summary>
@@ -5449,12 +5449,12 @@ The identifier of the terms.
 
 The data descriptor to which the term belongs.
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -5464,7 +5464,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.RealisationIndex
 
-Bases: [`PatternTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.PatternTermDataDescriptor)
+Bases: [`PatternTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PatternTermDataDescriptor)
 
 <p><details  class="autodoc_pydantic_collapsable_json">
 <summary>Show JSON schema</summary>
@@ -5509,12 +5509,12 @@ The regular expression.
 
 The data descriptor to which the term belongs.
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -5524,7 +5524,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.Realm
 
-Bases: [`PlainTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
+Bases: [`PlainTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
 
 <p><details  class="autodoc_pydantic_collapsable_json">
 <summary>Show JSON schema</summary>
@@ -5581,12 +5581,12 @@ The identifier of the terms.
 
 The data descriptor to which the term belongs.
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -5669,7 +5669,7 @@ Validate that DOI follows proper format.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.Regex
 
-Bases: [`PatternTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.PatternTermDataDescriptor)
+Bases: [`PatternTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PatternTermDataDescriptor)
 
 <p><details  class="autodoc_pydantic_collapsable_json">
 <summary>Show JSON schema</summary>
@@ -5714,12 +5714,12 @@ The regular expression.
 
 The data descriptor to which the term belongs.
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -5729,7 +5729,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.Region
 
-Bases: [`PlainTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
+Bases: [`PlainTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
 
 <p><details  class="autodoc_pydantic_collapsable_json">
 <summary>Show JSON schema</summary>
@@ -5779,12 +5779,12 @@ The identifier of the terms.
 
 The data descriptor to which the term belongs.
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -5794,7 +5794,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.Resolution
 
-Bases: [`PlainTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
+Bases: [`PlainTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
 
 <p><details  class="autodoc_pydantic_collapsable_json">
 <summary>Show JSON schema</summary>
@@ -5865,12 +5865,12 @@ The data descriptor to which the term belongs.
 
 #### *field* value *: [str](https://docs.python.org/3/library/stdtypes.html#str)* *[Required]*
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -5880,7 +5880,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.Source
 
-Bases: [`PlainTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
+Bases: [`PlainTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
 
 A ‘source’ refers to a numerical representations of the Earth’s climate system. They simulate     the interactions between the atmosphere, oceans, land surface, and ice. These models are based     on fundamental physical, chemical, and biological processes and are used to understand past,     present, and future climate conditions. Each source or model is typically associated with a     specific research institution, center, or group. For instance, models like ‘EC-Earth’ are     developed by a consortium of European institutes, while ‘GFDL-CM4’ is developed by the     Geophysical Fluid Dynamics Laboratory (GFDL) in the United States.
 
@@ -6021,12 +6021,12 @@ Dictionary containing the model components that make up this climate source, inc
 
 The data descriptor to which the term belongs.
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -6036,7 +6036,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.SourceType
 
-Bases: [`PlainTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
+Bases: [`PlainTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
 
 <p><details  class="autodoc_pydantic_collapsable_json">
 <summary>Show JSON schema</summary>
@@ -6086,12 +6086,12 @@ The identifier of the terms.
 
 The data descriptor to which the term belongs.
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -6101,7 +6101,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.SubExperiment
 
-Bases: [`PlainTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
+Bases: [`PlainTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
 
 <p><details  class="autodoc_pydantic_collapsable_json">
 <summary>Show JSON schema</summary>
@@ -6151,12 +6151,12 @@ The identifier of the terms.
 
 The data descriptor to which the term belongs.
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -6166,7 +6166,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.Table
 
-Bases: [`PlainTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
+Bases: [`PlainTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
 
 <p><details  class="autodoc_pydantic_collapsable_json">
 <summary>Show JSON schema</summary>
@@ -6256,12 +6256,12 @@ The data descriptor to which the term belongs.
 Normalize variable_entry to ensure all items are strings.
 If items are dicts (resolved references), extract the ‘id’ field.
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -6271,7 +6271,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.TemporalLabel
 
-Bases: [`PlainTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
+Bases: [`PlainTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
 
 Temporal sampling label.
 
@@ -6281,7 +6281,7 @@ For a list of allowed values, see
 e.g. some summary of the values in [https://github.com/WCRP-CMIP/WCRP-universe/tree/esgvoc/temporal_label](https://github.com/WCRP-CMIP/WCRP-universe/tree/esgvoc/temporal_label).]
 
 This label is used as the temporal component of a branded variable’s suffix
-(see [`BrandedSuffix`](#esgvoc.api.data_descriptors.BrandedSuffix)).
+(see [`BrandedSuffix`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.BrandedSuffix)).
 By definition, the temporal label must be consistent with the branded suffix.
 Temporal labels must not contain the separator used when constructing the branded suffix.
 
@@ -6341,12 +6341,12 @@ The identifier of the terms.
 
 The data descriptor to which the term belongs.
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -6356,7 +6356,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.TimeRange
 
-Bases: [`PatternTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.PatternTermDataDescriptor)
+Bases: [`PatternTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PatternTermDataDescriptor)
 
 <p><details  class="autodoc_pydantic_collapsable_json">
 <summary>Show JSON schema</summary>
@@ -6408,12 +6408,12 @@ The regular expression.
 
 The data descriptor to which the term belongs.
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -6423,7 +6423,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.Title
 
-Bases: [`PatternTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.PatternTermDataDescriptor)
+Bases: [`PatternTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PatternTermDataDescriptor)
 
 <p><details  class="autodoc_pydantic_collapsable_json">
 <summary>Show JSON schema</summary>
@@ -6468,12 +6468,12 @@ The regular expression.
 
 The data descriptor to which the term belongs.
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -6483,7 +6483,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.TrackingId
 
-Bases: [`PatternTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.PatternTermDataDescriptor)
+Bases: [`PatternTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PatternTermDataDescriptor)
 
 <p><details  class="autodoc_pydantic_collapsable_json">
 <summary>Show JSON schema</summary>
@@ -6535,12 +6535,12 @@ The regular expression.
 
 The data descriptor to which the term belongs.
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -6550,7 +6550,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.Unit
 
-Bases: [`PlainTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
+Bases: [`PlainTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
 
 Native vertical grid units of the top level boundary or top layer thickness value. See section 5.2 Native vertical grid properties.
 Options for the native vertical grid Units property:
@@ -6611,12 +6611,12 @@ The identifier of the terms.
 
 The data descriptor to which the term belongs.
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -6626,7 +6626,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.Variable
 
-Bases: [`PlainTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
+Bases: [`PlainTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
 
 A climate-related quantity or measurement.
 
@@ -6646,7 +6646,7 @@ Some examples of variables that have been used in CMIP:
 
 Since CMIP7, the concept of a variable has been augmented with the idea of ‘branding’,
 leading to the idea of a ‘branded variable’.
-For details, see [`BrandedVariable`](#esgvoc.api.data_descriptors.BrandedVariable).
+For details, see [`BrandedVariable`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.BrandedVariable).
 
 <p><details  class="autodoc_pydantic_collapsable_json">
 <summary>Show JSON schema</summary>
@@ -6732,12 +6732,12 @@ The data descriptor to which the term belongs.
 
 #### *field* validation_method *: [str](https://docs.python.org/3/library/stdtypes.html#str)* *= 'list'*
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -6747,7 +6747,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.VariantLabel
 
-Bases: [`PatternTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.PatternTermDataDescriptor)
+Bases: [`PatternTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PatternTermDataDescriptor)
 
 <p><details  class="autodoc_pydantic_collapsable_json">
 <summary>Show JSON schema</summary>
@@ -6799,12 +6799,12 @@ The regular expression.
 
 The data descriptor to which the term belongs.
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -6814,7 +6814,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.VerticalLabel
 
-Bases: [`PlainTermDataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
+Bases: [`PlainTermDataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)
 
 Vertical label.
 
@@ -6824,7 +6824,7 @@ For a list of allowed values, see
 e.g. some summary of the values in [https://github.com/WCRP-CMIP/WCRP-universe/tree/esgvoc/vertical_label](https://github.com/WCRP-CMIP/WCRP-universe/tree/esgvoc/vertical_label).]
 
 This label is used as the vertical component of a branded variable’s suffix
-(see [`BrandedSuffix`](#esgvoc.api.data_descriptors.BrandedSuffix)).
+(see [`BrandedSuffix`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.BrandedSuffix)).
 By definition, the vertical label must be consistent with the branded suffix.
 Vertical labels must not contain the separator used when constructing the branded suffix.
 
@@ -6870,12 +6870,12 @@ The identifier of the terms.
 
 The data descriptor to which the term belongs.
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -6887,7 +6887,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.data_descriptor.CompositeTermDataDescriptor
 
-Bases: [`DataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)
+Bases: [`DataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)
 
 A data descriptor that describes terms composed of other terms.
 
@@ -6975,7 +6975,7 @@ A data descriptor that describes terms composed of other terms.
 
 The identifier of the terms.
 
-#### *field* parts *: [list](https://docs.python.org/3/library/stdtypes.html#list)[[CompositeTermPart](#esgvoc.api.data_descriptors.data_descriptor.CompositeTermPart)]* *[Required]*
+#### *field* parts *: [list](https://docs.python.org/3/library/stdtypes.html#list)[[CompositeTermPart](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.CompositeTermPart)]* *[Required]*
 
 The components.
 
@@ -6987,12 +6987,12 @@ The components separator character.
 
 The data descriptor to which the term belongs.
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -7002,7 +7002,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.data_descriptor.CompositeTermPart
 
-Bases: [`ConfiguredBaseModel`](#esgvoc.api.data_descriptors.data_descriptor.ConfiguredBaseModel)
+Bases: [`ConfiguredBaseModel`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.ConfiguredBaseModel)
 
 A reference to a term, part of a composite term.
 
@@ -7082,7 +7082,7 @@ Bases: [`BaseModel`](https://docs.pydantic.dev/latest/api/base_model/#pydantic.B
 
 ### *Pydantic model* esgvoc.api.data_descriptors.data_descriptor.DataDescriptor
 
-Bases: [`ConfiguredBaseModel`](#esgvoc.api.data_descriptors.data_descriptor.ConfiguredBaseModel), [`ABC`](https://docs.python.org/3/library/abc.html#abc.ABC)
+Bases: [`ConfiguredBaseModel`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.ConfiguredBaseModel), [`ABC`](https://docs.python.org/3/library/abc.html#abc.ABC)
 
 Generic class for the data descriptor classes.
 
@@ -7121,12 +7121,12 @@ The identifier of the terms.
 
 The data descriptor to which the term belongs.
 
-#### *abstractmethod* accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### *abstractmethod* accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -7136,7 +7136,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.data_descriptor.DataDescriptorSubSet
 
-Bases: [`DataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)
+Bases: [`DataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)
 
 A sub set of the information contains in a term.
 
@@ -7175,12 +7175,12 @@ The identifier of the terms.
 
 The data descriptor to which the term belongs.
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -7198,25 +7198,25 @@ Bases: [`Protocol`](https://docs.python.org/3/library/typing.html#typing.Protoco
 
 The specifications for a term visitor.
 
-#### visit_composite_term(term: [CompositeTermDataDescriptor](#esgvoc.api.data_descriptors.data_descriptor.CompositeTermDataDescriptor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### visit_composite_term(term: [CompositeTermDataDescriptor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.CompositeTermDataDescriptor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Visit a composite term.
 
-#### visit_pattern_term(term: [PatternTermDataDescriptor](#esgvoc.api.data_descriptors.data_descriptor.PatternTermDataDescriptor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### visit_pattern_term(term: [PatternTermDataDescriptor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PatternTermDataDescriptor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Visit a pattern term.
 
-#### visit_plain_term(term: [PlainTermDataDescriptor](#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### visit_plain_term(term: [PlainTermDataDescriptor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Visit a plain term.
 
-#### visit_sub_set_term(term: [DataDescriptorSubSet](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorSubSet)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### visit_sub_set_term(term: [DataDescriptorSubSet](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorSubSet)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Visit a sub set of the information of a term.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.data_descriptor.PatternTermDataDescriptor
 
-Bases: [`DataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)
+Bases: [`DataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)
 
 A data descriptor that describes terms defined by a regular expression.
 
@@ -7264,12 +7264,12 @@ The regular expression.
 
 The data descriptor to which the term belongs.
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -7279,7 +7279,7 @@ Accept an term visitor.
 
 ### *Pydantic model* esgvoc.api.data_descriptors.data_descriptor.PlainTermDataDescriptor
 
-Bases: [`DataDescriptor`](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)
+Bases: [`DataDescriptor`](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)
 
 A data descriptor that describes hand written terms.
 
@@ -7325,12 +7325,12 @@ The identifier of the terms.
 
 The data descriptor to which the term belongs.
 
-#### accept(visitor: [DataDescriptorVisitor](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [DataDescriptorVisitor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an term visitor.
 
 * **Parameters:**
-  **visitor** ([*DataDescriptorVisitor*](#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
+  **visitor** ([*DataDescriptorVisitor*](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptorVisitor)) – The term visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**

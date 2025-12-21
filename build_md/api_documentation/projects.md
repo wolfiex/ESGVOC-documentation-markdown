@@ -41,9 +41,9 @@ haven’t got any description.**
 * **Return type:**
   [list](https://docs.python.org/3/library/stdtypes.html#list)[[tuple](https://docs.python.org/3/library/stdtypes.html#tuple)[[str](https://docs.python.org/3/library/stdtypes.html#str), [dict](https://docs.python.org/3/library/stdtypes.html#dict)]]
 * **Raises:**
-  [**EsgvocValueError**](miscellaneous.md#esgvoc.core.exceptions.EsgvocValueError) – If the expression cannot be interpreted.
+  [**EsgvocValueError**](../source/api_documentation/miscellaneous.md#esgvoc.core.exceptions.EsgvocValueError) – If the expression cannot be interpreted.
 
-### esgvoc.api.projects.find_items_in_project(expression: [str](https://docs.python.org/3/library/stdtypes.html#str), project_id: [str](https://docs.python.org/3/library/stdtypes.html#str), only_id: [bool](https://docs.python.org/3/library/functions.html#bool) = False, limit: [int](https://docs.python.org/3/library/functions.html#int) | [None](https://docs.python.org/3/library/constants.html#None) = None, offset: [int](https://docs.python.org/3/library/functions.html#int) | [None](https://docs.python.org/3/library/constants.html#None) = None) → [list](https://docs.python.org/3/library/stdtypes.html#list)[[Item](miscellaneous.md#esgvoc.api.search.Item)]
+### esgvoc.api.projects.find_items_in_project(expression: [str](https://docs.python.org/3/library/stdtypes.html#str), project_id: [str](https://docs.python.org/3/library/stdtypes.html#str), only_id: [bool](https://docs.python.org/3/library/functions.html#bool) = False, limit: [int](https://docs.python.org/3/library/functions.html#int) | [None](https://docs.python.org/3/library/constants.html#None) = None, offset: [int](https://docs.python.org/3/library/functions.html#int) | [None](https://docs.python.org/3/library/constants.html#None) = None) → [list](https://docs.python.org/3/library/stdtypes.html#list)[[Item](../source/api_documentation/miscellaneous.md#esgvoc.api.search.Item)]
 
 Find items, at the moment terms and collections, in the given project based on a full-text
 search defined by the given expression.
@@ -75,11 +75,11 @@ they haven’t got any description.**
 * **Returns:**
   A list of item instances. Returns an empty list if no matches are found.
 * **Return type:**
-  [list](https://docs.python.org/3/library/stdtypes.html#list)[[Item](miscellaneous.md#esgvoc.api.search.Item)]
+  [list](https://docs.python.org/3/library/stdtypes.html#list)[[Item](../source/api_documentation/miscellaneous.md#esgvoc.api.search.Item)]
 * **Raises:**
-  [**EsgvocValueError**](miscellaneous.md#esgvoc.core.exceptions.EsgvocValueError) – If the expression cannot be interpreted.
+  [**EsgvocValueError**](../source/api_documentation/miscellaneous.md#esgvoc.core.exceptions.EsgvocValueError) – If the expression cannot be interpreted.
 
-### esgvoc.api.projects.find_terms_in_all_projects(expression: [str](https://docs.python.org/3/library/stdtypes.html#str), only_id: [bool](https://docs.python.org/3/library/functions.html#bool) = False, limit: [int](https://docs.python.org/3/library/functions.html#int) | [None](https://docs.python.org/3/library/constants.html#None) = None, offset: [int](https://docs.python.org/3/library/functions.html#int) | [None](https://docs.python.org/3/library/constants.html#None) = None, selected_term_fields: [Iterable](https://docs.python.org/3/library/typing.html#typing.Iterable)[[str](https://docs.python.org/3/library/stdtypes.html#str)] | [None](https://docs.python.org/3/library/constants.html#None) = None) → [list](https://docs.python.org/3/library/stdtypes.html#list)[[tuple](https://docs.python.org/3/library/stdtypes.html#tuple)[[str](https://docs.python.org/3/library/stdtypes.html#str), [list](https://docs.python.org/3/library/stdtypes.html#list)[[DataDescriptor](data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)]]]
+### esgvoc.api.projects.find_terms_in_all_projects(expression: [str](https://docs.python.org/3/library/stdtypes.html#str), only_id: [bool](https://docs.python.org/3/library/functions.html#bool) = False, limit: [int](https://docs.python.org/3/library/functions.html#int) | [None](https://docs.python.org/3/library/constants.html#None) = None, offset: [int](https://docs.python.org/3/library/functions.html#int) | [None](https://docs.python.org/3/library/constants.html#None) = None, selected_term_fields: [Iterable](https://docs.python.org/3/library/typing.html#typing.Iterable)[[str](https://docs.python.org/3/library/stdtypes.html#str)] | [None](https://docs.python.org/3/library/constants.html#None) = None) → [list](https://docs.python.org/3/library/stdtypes.html#list)[[tuple](https://docs.python.org/3/library/stdtypes.html#tuple)[[str](https://docs.python.org/3/library/stdtypes.html#str), [list](https://docs.python.org/3/library/stdtypes.html#list)[[DataDescriptor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)]]]
 
 Find terms in all projects based on a full text search defined by the given expression.
 The expression can be composed of one or multiple keywords.
@@ -107,11 +107,11 @@ terms.
 * **Returns:**
   A list of project ids and term instances. Returns an empty list if no matches are found.
 * **Return type:**
-  [list](https://docs.python.org/3/library/stdtypes.html#list)[[tuple](https://docs.python.org/3/library/stdtypes.html#tuple)[[str](https://docs.python.org/3/library/stdtypes.html#str), [list](https://docs.python.org/3/library/stdtypes.html#list)[[DataDescriptor](data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)]]]
+  [list](https://docs.python.org/3/library/stdtypes.html#list)[[tuple](https://docs.python.org/3/library/stdtypes.html#tuple)[[str](https://docs.python.org/3/library/stdtypes.html#str), [list](https://docs.python.org/3/library/stdtypes.html#list)[[DataDescriptor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)]]]
 * **Raises:**
-  [**EsgvocValueError**](miscellaneous.md#esgvoc.core.exceptions.EsgvocValueError) – If the expression cannot be interpreted.
+  [**EsgvocValueError**](../source/api_documentation/miscellaneous.md#esgvoc.core.exceptions.EsgvocValueError) – If the expression cannot be interpreted.
 
-### esgvoc.api.projects.find_terms_in_collection(expression: [str](https://docs.python.org/3/library/stdtypes.html#str), project_id: [str](https://docs.python.org/3/library/stdtypes.html#str), collection_id: [str](https://docs.python.org/3/library/stdtypes.html#str), only_id: [bool](https://docs.python.org/3/library/functions.html#bool) = False, limit: [int](https://docs.python.org/3/library/functions.html#int) | [None](https://docs.python.org/3/library/constants.html#None) = None, offset: [int](https://docs.python.org/3/library/functions.html#int) | [None](https://docs.python.org/3/library/constants.html#None) = None, selected_term_fields: [Iterable](https://docs.python.org/3/library/typing.html#typing.Iterable)[[str](https://docs.python.org/3/library/stdtypes.html#str)] | [None](https://docs.python.org/3/library/constants.html#None) = None) → [list](https://docs.python.org/3/library/stdtypes.html#list)[[DataDescriptor](data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)]
+### esgvoc.api.projects.find_terms_in_collection(expression: [str](https://docs.python.org/3/library/stdtypes.html#str), project_id: [str](https://docs.python.org/3/library/stdtypes.html#str), collection_id: [str](https://docs.python.org/3/library/stdtypes.html#str), only_id: [bool](https://docs.python.org/3/library/functions.html#bool) = False, limit: [int](https://docs.python.org/3/library/functions.html#int) | [None](https://docs.python.org/3/library/constants.html#None) = None, offset: [int](https://docs.python.org/3/library/functions.html#int) | [None](https://docs.python.org/3/library/constants.html#None) = None, selected_term_fields: [Iterable](https://docs.python.org/3/library/typing.html#typing.Iterable)[[str](https://docs.python.org/3/library/stdtypes.html#str)] | [None](https://docs.python.org/3/library/constants.html#None) = None) → [list](https://docs.python.org/3/library/stdtypes.html#list)[[DataDescriptor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)]
 
 Find terms in the given project and collection based on a full text search defined by the given
 expression.
@@ -145,11 +145,11 @@ terms.
 * **Returns:**
   A list of term instances. Returns an empty list if no matches are found.
 * **Return type:**
-  [list](https://docs.python.org/3/library/stdtypes.html#list)[[DataDescriptor](data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)]
+  [list](https://docs.python.org/3/library/stdtypes.html#list)[[DataDescriptor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)]
 * **Raises:**
-  [**EsgvocValueError**](miscellaneous.md#esgvoc.core.exceptions.EsgvocValueError) – If the expression cannot be interpreted.
+  [**EsgvocValueError**](../source/api_documentation/miscellaneous.md#esgvoc.core.exceptions.EsgvocValueError) – If the expression cannot be interpreted.
 
-### esgvoc.api.projects.find_terms_in_project(expression: [str](https://docs.python.org/3/library/stdtypes.html#str), project_id: [str](https://docs.python.org/3/library/stdtypes.html#str), only_id: [bool](https://docs.python.org/3/library/functions.html#bool) = False, limit: [int](https://docs.python.org/3/library/functions.html#int) | [None](https://docs.python.org/3/library/constants.html#None) = None, offset: [int](https://docs.python.org/3/library/functions.html#int) | [None](https://docs.python.org/3/library/constants.html#None) = None, selected_term_fields: [Iterable](https://docs.python.org/3/library/typing.html#typing.Iterable)[[str](https://docs.python.org/3/library/stdtypes.html#str)] | [None](https://docs.python.org/3/library/constants.html#None) = None) → [list](https://docs.python.org/3/library/stdtypes.html#list)[[DataDescriptor](data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)]
+### esgvoc.api.projects.find_terms_in_project(expression: [str](https://docs.python.org/3/library/stdtypes.html#str), project_id: [str](https://docs.python.org/3/library/stdtypes.html#str), only_id: [bool](https://docs.python.org/3/library/functions.html#bool) = False, limit: [int](https://docs.python.org/3/library/functions.html#int) | [None](https://docs.python.org/3/library/constants.html#None) = None, offset: [int](https://docs.python.org/3/library/functions.html#int) | [None](https://docs.python.org/3/library/constants.html#None) = None, selected_term_fields: [Iterable](https://docs.python.org/3/library/typing.html#typing.Iterable)[[str](https://docs.python.org/3/library/stdtypes.html#str)] | [None](https://docs.python.org/3/library/constants.html#None) = None) → [list](https://docs.python.org/3/library/stdtypes.html#list)[[DataDescriptor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)]
 
 Find terms in the given project based on a full text search defined by the given expression.
 The expression can be composed of one or multiple keywords.
@@ -181,9 +181,9 @@ terms.
 * **Returns:**
   A list of term instances. Returns an empty list if no matches are found.
 * **Return type:**
-  [list](https://docs.python.org/3/library/stdtypes.html#list)[[DataDescriptor](data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)]
+  [list](https://docs.python.org/3/library/stdtypes.html#list)[[DataDescriptor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)]
 * **Raises:**
-  [**EsgvocValueError**](miscellaneous.md#esgvoc.core.exceptions.EsgvocValueError) – If the expression cannot be interpreted.
+  [**EsgvocValueError**](../source/api_documentation/miscellaneous.md#esgvoc.core.exceptions.EsgvocValueError) – If the expression cannot be interpreted.
 
 ### esgvoc.api.projects.get_all_collections_in_project(project_id: [str](https://docs.python.org/3/library/stdtypes.html#str)) → [list](https://docs.python.org/3/library/stdtypes.html#list)[[str](https://docs.python.org/3/library/stdtypes.html#str)]
 
@@ -208,7 +208,7 @@ Gets all projects.
 * **Return type:**
   [list](https://docs.python.org/3/library/stdtypes.html#list)[[str](https://docs.python.org/3/library/stdtypes.html#str)]
 
-### esgvoc.api.projects.get_all_terms_in_all_projects(selected_term_fields: [Iterable](https://docs.python.org/3/library/typing.html#typing.Iterable)[[str](https://docs.python.org/3/library/stdtypes.html#str)] | [None](https://docs.python.org/3/library/constants.html#None) = None) → [list](https://docs.python.org/3/library/stdtypes.html#list)[[tuple](https://docs.python.org/3/library/stdtypes.html#tuple)[[str](https://docs.python.org/3/library/stdtypes.html#str), [list](https://docs.python.org/3/library/stdtypes.html#list)[[DataDescriptor](data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)]]]
+### esgvoc.api.projects.get_all_terms_in_all_projects(selected_term_fields: [Iterable](https://docs.python.org/3/library/typing.html#typing.Iterable)[[str](https://docs.python.org/3/library/stdtypes.html#str)] | [None](https://docs.python.org/3/library/constants.html#None) = None) → [list](https://docs.python.org/3/library/stdtypes.html#list)[[tuple](https://docs.python.org/3/library/stdtypes.html#tuple)[[str](https://docs.python.org/3/library/stdtypes.html#str), [list](https://docs.python.org/3/library/stdtypes.html#list)[[DataDescriptor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)]]]
 
 Gets all terms of all projects.
 
@@ -217,9 +217,9 @@ Gets all terms of all projects.
 * **Returns:**
   A list of tuple project_id and term instances of that project.
 * **Return type:**
-  [list](https://docs.python.org/3/library/stdtypes.html#list)[[tuple](https://docs.python.org/3/library/stdtypes.html#tuple)[[str](https://docs.python.org/3/library/stdtypes.html#str), [list](https://docs.python.org/3/library/stdtypes.html#list)[[DataDescriptor](data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)]]]
+  [list](https://docs.python.org/3/library/stdtypes.html#list)[[tuple](https://docs.python.org/3/library/stdtypes.html#tuple)[[str](https://docs.python.org/3/library/stdtypes.html#str), [list](https://docs.python.org/3/library/stdtypes.html#list)[[DataDescriptor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)]]]
 
-### esgvoc.api.projects.get_all_terms_in_collection(project_id: [str](https://docs.python.org/3/library/stdtypes.html#str), collection_id: [str](https://docs.python.org/3/library/stdtypes.html#str), selected_term_fields: [Iterable](https://docs.python.org/3/library/typing.html#typing.Iterable)[[str](https://docs.python.org/3/library/stdtypes.html#str)] | [None](https://docs.python.org/3/library/constants.html#None) = None) → [list](https://docs.python.org/3/library/stdtypes.html#list)[[DataDescriptor](data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)]
+### esgvoc.api.projects.get_all_terms_in_collection(project_id: [str](https://docs.python.org/3/library/stdtypes.html#str), collection_id: [str](https://docs.python.org/3/library/stdtypes.html#str), selected_term_fields: [Iterable](https://docs.python.org/3/library/typing.html#typing.Iterable)[[str](https://docs.python.org/3/library/stdtypes.html#str)] | [None](https://docs.python.org/3/library/constants.html#None) = None) → [list](https://docs.python.org/3/library/stdtypes.html#list)[[DataDescriptor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)]
 
 Gets all terms of the given collection of a project.
 This function performs an exact match on the project_id and collection_id,
@@ -234,9 +234,9 @@ returns an empty list.
 * **Returns:**
   a list of term instances. Returns an empty list if no matches are found.
 * **Return type:**
-  [list](https://docs.python.org/3/library/stdtypes.html#list)[[DataDescriptor](data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)]
+  [list](https://docs.python.org/3/library/stdtypes.html#list)[[DataDescriptor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)]
 
-### esgvoc.api.projects.get_all_terms_in_project(project_id: [str](https://docs.python.org/3/library/stdtypes.html#str), selected_term_fields: [Iterable](https://docs.python.org/3/library/typing.html#typing.Iterable)[[str](https://docs.python.org/3/library/stdtypes.html#str)] | [None](https://docs.python.org/3/library/constants.html#None) = None) → [list](https://docs.python.org/3/library/stdtypes.html#list)[[DataDescriptor](data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)]
+### esgvoc.api.projects.get_all_terms_in_project(project_id: [str](https://docs.python.org/3/library/stdtypes.html#str), selected_term_fields: [Iterable](https://docs.python.org/3/library/typing.html#typing.Iterable)[[str](https://docs.python.org/3/library/stdtypes.html#str)] | [None](https://docs.python.org/3/library/constants.html#None) = None) → [list](https://docs.python.org/3/library/stdtypes.html#list)[[DataDescriptor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)]
 
 Gets all terms of the given project.
 This function performs an exact match on the project_id and
@@ -250,7 +250,7 @@ If the provided project_id is not found, the function returns an empty list.
 * **Returns:**
   A list of term instances. Returns an empty list if no matches are found.
 * **Return type:**
-  [list](https://docs.python.org/3/library/stdtypes.html#list)[[DataDescriptor](data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)]
+  [list](https://docs.python.org/3/library/stdtypes.html#list)[[DataDescriptor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)]
 
 ### esgvoc.api.projects.get_collection_from_data_descriptor_in_all_projects(data_descriptor_id: [str](https://docs.python.org/3/library/stdtypes.html#str)) → [list](https://docs.python.org/3/library/stdtypes.html#list)[[tuple](https://docs.python.org/3/library/stdtypes.html#tuple)[[str](https://docs.python.org/3/library/stdtypes.html#str), [str](https://docs.python.org/3/library/stdtypes.html#str), [dict](https://docs.python.org/3/library/stdtypes.html#dict)]]
 
@@ -303,7 +303,7 @@ the function returns None.
 * **Return type:**
   [tuple](https://docs.python.org/3/library/stdtypes.html#tuple)[[str](https://docs.python.org/3/library/stdtypes.html#str), [dict](https://docs.python.org/3/library/stdtypes.html#dict)] | None
 
-### esgvoc.api.projects.get_project(project_id: [str](https://docs.python.org/3/library/stdtypes.html#str)) → [ProjectSpecs](project_specs.md#esgvoc.api.project_specs.ProjectSpecs) | [None](https://docs.python.org/3/library/constants.html#None)
+### esgvoc.api.projects.get_project(project_id: [str](https://docs.python.org/3/library/stdtypes.html#str)) → [ProjectSpecs](../source/api_documentation/project_specs.md#esgvoc.api.project_specs.ProjectSpecs) | [None](https://docs.python.org/3/library/constants.html#None)
 
 Get a project and returns its specifications.
 This function performs an exact match on the project_id and
@@ -315,9 +315,9 @@ If the provided project_id is not found, the function returns None.
 * **Returns:**
   The specs of the project found. Returns None if no matches are found.
 * **Return type:**
-  [ProjectSpecs](project_specs.md#esgvoc.api.project_specs.ProjectSpecs) | None
+  [ProjectSpecs](../source/api_documentation/project_specs.md#esgvoc.api.project_specs.ProjectSpecs) | None
 
-### esgvoc.api.projects.get_term_from_universe_term_id_in_all_projects(data_descriptor_id: [str](https://docs.python.org/3/library/stdtypes.html#str), universe_term_id: [str](https://docs.python.org/3/library/stdtypes.html#str), selected_term_fields: [Iterable](https://docs.python.org/3/library/typing.html#typing.Iterable)[[str](https://docs.python.org/3/library/stdtypes.html#str)] | [None](https://docs.python.org/3/library/constants.html#None) = None) → [list](https://docs.python.org/3/library/stdtypes.html#list)[[tuple](https://docs.python.org/3/library/stdtypes.html#tuple)[[str](https://docs.python.org/3/library/stdtypes.html#str), [str](https://docs.python.org/3/library/stdtypes.html#str), [DataDescriptor](data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)]]
+### esgvoc.api.projects.get_term_from_universe_term_id_in_all_projects(data_descriptor_id: [str](https://docs.python.org/3/library/stdtypes.html#str), universe_term_id: [str](https://docs.python.org/3/library/stdtypes.html#str), selected_term_fields: [Iterable](https://docs.python.org/3/library/typing.html#typing.Iterable)[[str](https://docs.python.org/3/library/stdtypes.html#str)] | [None](https://docs.python.org/3/library/constants.html#None) = None) → [list](https://docs.python.org/3/library/stdtypes.html#list)[[tuple](https://docs.python.org/3/library/stdtypes.html#tuple)[[str](https://docs.python.org/3/library/stdtypes.html#str), [str](https://docs.python.org/3/library/stdtypes.html#str), [DataDescriptor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)]]
 
 Returns the terms, in all projects, that correspond to the given term in the universe.
 This function performs an exact match on the data_descriptor_id
@@ -333,9 +333,9 @@ the function returns an empty list.
 * **Returns:**
   A project_id, collection id and the project term instance.     Returns an empty list if no matches are found.
 * **Return type:**
-  [list](https://docs.python.org/3/library/stdtypes.html#list)[[tuple](https://docs.python.org/3/library/stdtypes.html#tuple)[[str](https://docs.python.org/3/library/stdtypes.html#str), [str](https://docs.python.org/3/library/stdtypes.html#str), [DataDescriptor](data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)]]
+  [list](https://docs.python.org/3/library/stdtypes.html#list)[[tuple](https://docs.python.org/3/library/stdtypes.html#tuple)[[str](https://docs.python.org/3/library/stdtypes.html#str), [str](https://docs.python.org/3/library/stdtypes.html#str), [DataDescriptor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)]]
 
-### esgvoc.api.projects.get_term_from_universe_term_id_in_project(project_id: [str](https://docs.python.org/3/library/stdtypes.html#str), data_descriptor_id: [str](https://docs.python.org/3/library/stdtypes.html#str), universe_term_id: [str](https://docs.python.org/3/library/stdtypes.html#str), selected_term_fields: [Iterable](https://docs.python.org/3/library/typing.html#typing.Iterable)[[str](https://docs.python.org/3/library/stdtypes.html#str)] | [None](https://docs.python.org/3/library/constants.html#None) = None) → [tuple](https://docs.python.org/3/library/stdtypes.html#tuple)[[str](https://docs.python.org/3/library/stdtypes.html#str), [DataDescriptor](data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)] | [None](https://docs.python.org/3/library/constants.html#None)
+### esgvoc.api.projects.get_term_from_universe_term_id_in_project(project_id: [str](https://docs.python.org/3/library/stdtypes.html#str), data_descriptor_id: [str](https://docs.python.org/3/library/stdtypes.html#str), universe_term_id: [str](https://docs.python.org/3/library/stdtypes.html#str), selected_term_fields: [Iterable](https://docs.python.org/3/library/typing.html#typing.Iterable)[[str](https://docs.python.org/3/library/stdtypes.html#str)] | [None](https://docs.python.org/3/library/constants.html#None) = None) → [tuple](https://docs.python.org/3/library/stdtypes.html#tuple)[[str](https://docs.python.org/3/library/stdtypes.html#str), [DataDescriptor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)] | [None](https://docs.python.org/3/library/constants.html#None)
 
 Returns the term, in the given project, that corresponds to the given term in the universe.
 This function performs an exact match on the project_id, data_descriptor_id
@@ -352,9 +352,9 @@ the function returns None.
 * **Returns:**
   A collection id and the project term instance. Returns None if no matches are found.
 * **Return type:**
-  [tuple](https://docs.python.org/3/library/stdtypes.html#tuple)[[str](https://docs.python.org/3/library/stdtypes.html#str), [DataDescriptor](data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)] | None
+  [tuple](https://docs.python.org/3/library/stdtypes.html#tuple)[[str](https://docs.python.org/3/library/stdtypes.html#str), [DataDescriptor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor)] | None
 
-### esgvoc.api.projects.get_term_in_collection(project_id: [str](https://docs.python.org/3/library/stdtypes.html#str), collection_id: [str](https://docs.python.org/3/library/stdtypes.html#str), term_id: [str](https://docs.python.org/3/library/stdtypes.html#str), selected_term_fields: [Iterable](https://docs.python.org/3/library/typing.html#typing.Iterable)[[str](https://docs.python.org/3/library/stdtypes.html#str)] | [None](https://docs.python.org/3/library/constants.html#None) = None) → [DataDescriptor](data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor) | [None](https://docs.python.org/3/library/constants.html#None)
+### esgvoc.api.projects.get_term_in_collection(project_id: [str](https://docs.python.org/3/library/stdtypes.html#str), collection_id: [str](https://docs.python.org/3/library/stdtypes.html#str), term_id: [str](https://docs.python.org/3/library/stdtypes.html#str), selected_term_fields: [Iterable](https://docs.python.org/3/library/typing.html#typing.Iterable)[[str](https://docs.python.org/3/library/stdtypes.html#str)] | [None](https://docs.python.org/3/library/constants.html#None) = None) → [DataDescriptor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor) | [None](https://docs.python.org/3/library/constants.html#None)
 
 Returns the term, in the given project and collection,
 whose id corresponds exactly to the given term id.
@@ -371,9 +371,9 @@ the function returns None.
 * **Returns:**
   A term instance. Returns None if no match is found.
 * **Return type:**
-  [DataDescriptor](data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor) | None
+  [DataDescriptor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor) | None
 
-### esgvoc.api.projects.get_term_in_project(project_id: [str](https://docs.python.org/3/library/stdtypes.html#str), term_id: [str](https://docs.python.org/3/library/stdtypes.html#str), selected_term_fields: [Iterable](https://docs.python.org/3/library/typing.html#typing.Iterable)[[str](https://docs.python.org/3/library/stdtypes.html#str)] | [None](https://docs.python.org/3/library/constants.html#None) = None) → [DataDescriptor](data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor) | [None](https://docs.python.org/3/library/constants.html#None)
+### esgvoc.api.projects.get_term_in_project(project_id: [str](https://docs.python.org/3/library/stdtypes.html#str), term_id: [str](https://docs.python.org/3/library/stdtypes.html#str), selected_term_fields: [Iterable](https://docs.python.org/3/library/typing.html#typing.Iterable)[[str](https://docs.python.org/3/library/stdtypes.html#str)] | [None](https://docs.python.org/3/library/constants.html#None) = None) → [DataDescriptor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor) | [None](https://docs.python.org/3/library/constants.html#None)
 
 Returns the first occurrence of the terms, in the given project, whose id corresponds exactly to
 the given term id.
@@ -390,9 +390,9 @@ the function returns None.
 * **Returns:**
   A term instance. Returns None if no match is found.
 * **Return type:**
-  [DataDescriptor](data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor) | None
+  [DataDescriptor](../source/api_documentation/data_descriptors.md#esgvoc.api.data_descriptors.data_descriptor.DataDescriptor) | None
 
-### esgvoc.api.projects.valid_term(value: [str](https://docs.python.org/3/library/stdtypes.html#str), project_id: [str](https://docs.python.org/3/library/stdtypes.html#str), collection_id: [str](https://docs.python.org/3/library/stdtypes.html#str), term_id: [str](https://docs.python.org/3/library/stdtypes.html#str)) → [ValidationReport](#esgvoc.api.report.ValidationReport)
+### esgvoc.api.projects.valid_term(value: [str](https://docs.python.org/3/library/stdtypes.html#str), project_id: [str](https://docs.python.org/3/library/stdtypes.html#str), collection_id: [str](https://docs.python.org/3/library/stdtypes.html#str), term_id: [str](https://docs.python.org/3/library/stdtypes.html#str)) → [ValidationReport](../source/api_documentation/projects.md#esgvoc.api.report.ValidationReport)
 
 Check if the given value may or may not represent the given term. The functions returns
 a report that contains the possible errors.
@@ -415,11 +415,11 @@ the function raises a EsgvocNotFoundError.
 * **Returns:**
   A validation report that contains the possible errors
 * **Return type:**
-  [ValidationReport](#esgvoc.api.report.ValidationReport)
+  [ValidationReport](../source/api_documentation/projects.md#esgvoc.api.report.ValidationReport)
 * **Raises:**
-  [**EsgvocNotFoundError**](miscellaneous.md#esgvoc.core.exceptions.EsgvocNotFoundError) – If any of the provided ids is not found
+  [**EsgvocNotFoundError**](../source/api_documentation/miscellaneous.md#esgvoc.core.exceptions.EsgvocNotFoundError) – If any of the provided ids is not found
 
-### esgvoc.api.projects.valid_term_in_all_projects(value: [str](https://docs.python.org/3/library/stdtypes.html#str)) → [list](https://docs.python.org/3/library/stdtypes.html#list)[[MatchingTerm](miscellaneous.md#esgvoc.api.search.MatchingTerm)]
+### esgvoc.api.projects.valid_term_in_all_projects(value: [str](https://docs.python.org/3/library/stdtypes.html#str)) → [list](https://docs.python.org/3/library/stdtypes.html#list)[[MatchingTerm](../source/api_documentation/miscellaneous.md#esgvoc.api.search.MatchingTerm)]
 
 Check if the given value may or may not represent a term in all projects. The function
 returns the terms that the value matches.
@@ -436,9 +436,9 @@ Behavior based on the nature of the term:
 * **Returns:**
   The list of terms that the value matches.
 * **Return type:**
-  [list](https://docs.python.org/3/library/stdtypes.html#list)[[MatchingTerm](miscellaneous.md#esgvoc.api.search.MatchingTerm)]
+  [list](https://docs.python.org/3/library/stdtypes.html#list)[[MatchingTerm](../source/api_documentation/miscellaneous.md#esgvoc.api.search.MatchingTerm)]
 
-### esgvoc.api.projects.valid_term_in_collection(value: [str](https://docs.python.org/3/library/stdtypes.html#str), project_id: [str](https://docs.python.org/3/library/stdtypes.html#str), collection_id: [str](https://docs.python.org/3/library/stdtypes.html#str)) → [list](https://docs.python.org/3/library/stdtypes.html#list)[[MatchingTerm](miscellaneous.md#esgvoc.api.search.MatchingTerm)]
+### esgvoc.api.projects.valid_term_in_collection(value: [str](https://docs.python.org/3/library/stdtypes.html#str), project_id: [str](https://docs.python.org/3/library/stdtypes.html#str), collection_id: [str](https://docs.python.org/3/library/stdtypes.html#str)) → [list](https://docs.python.org/3/library/stdtypes.html#list)[[MatchingTerm](../source/api_documentation/miscellaneous.md#esgvoc.api.search.MatchingTerm)]
 
 Check if the given value may or may not represent a term in the given collection. The function
 returns the terms that the value matches.
@@ -460,11 +460,11 @@ the function raises a EsgvocNotFoundError.
 * **Returns:**
   The list of terms that the value matches.
 * **Return type:**
-  [list](https://docs.python.org/3/library/stdtypes.html#list)[[MatchingTerm](miscellaneous.md#esgvoc.api.search.MatchingTerm)]
+  [list](https://docs.python.org/3/library/stdtypes.html#list)[[MatchingTerm](../source/api_documentation/miscellaneous.md#esgvoc.api.search.MatchingTerm)]
 * **Raises:**
-  [**EsgvocNotFoundError**](miscellaneous.md#esgvoc.core.exceptions.EsgvocNotFoundError) – If any of the provided ids is not found
+  [**EsgvocNotFoundError**](../source/api_documentation/miscellaneous.md#esgvoc.core.exceptions.EsgvocNotFoundError) – If any of the provided ids is not found
 
-### esgvoc.api.projects.valid_term_in_project(value: [str](https://docs.python.org/3/library/stdtypes.html#str), project_id: [str](https://docs.python.org/3/library/stdtypes.html#str)) → [list](https://docs.python.org/3/library/stdtypes.html#list)[[MatchingTerm](miscellaneous.md#esgvoc.api.search.MatchingTerm)]
+### esgvoc.api.projects.valid_term_in_project(value: [str](https://docs.python.org/3/library/stdtypes.html#str), project_id: [str](https://docs.python.org/3/library/stdtypes.html#str)) → [list](https://docs.python.org/3/library/stdtypes.html#list)[[MatchingTerm](../source/api_documentation/miscellaneous.md#esgvoc.api.search.MatchingTerm)]
 
 Check if the given value may or may not represent a term in the given project. The function
 returns the terms that the value matches.
@@ -484,15 +484,15 @@ If the project_id is not found, the function raises a EsgvocNotFoundError.
 * **Returns:**
   The list of terms that the value matches.
 * **Return type:**
-  [list](https://docs.python.org/3/library/stdtypes.html#list)[[MatchingTerm](miscellaneous.md#esgvoc.api.search.MatchingTerm)]
+  [list](https://docs.python.org/3/library/stdtypes.html#list)[[MatchingTerm](../source/api_documentation/miscellaneous.md#esgvoc.api.search.MatchingTerm)]
 * **Raises:**
-  [**EsgvocNotFoundError**](miscellaneous.md#esgvoc.core.exceptions.EsgvocNotFoundError) – If the project_id is not found
+  [**EsgvocNotFoundError**](../source/api_documentation/miscellaneous.md#esgvoc.core.exceptions.EsgvocNotFoundError) – If the project_id is not found
 
 ## Validation reporting
 
 ### *Pydantic model* esgvoc.api.report.ProjectTermError
 
-Bases: [`ValidationError`](#esgvoc.api.report.ValidationError)
+Bases: [`ValidationError`](../source/api_documentation/projects.md#esgvoc.api.report.ValidationError)
 
 A validation error on a term from a project.
 
@@ -553,7 +553,7 @@ The collection id that the term belongs
 
 JSON specification of the term.
 
-#### *field* term_kind *: [TermKind](miscellaneous.md#esgvoc.core.db.models.mixins.TermKind)* *[Required]*
+#### *field* term_kind *: [TermKind](../source/api_documentation/miscellaneous.md#esgvoc.core.db.models.mixins.TermKind)* *[Required]*
 
 The kind of term.
 
@@ -561,12 +561,12 @@ The kind of term.
 
 The given value that is invalid.
 
-#### accept(visitor: [ValidationErrorVisitor](#esgvoc.api.report.ValidationErrorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [ValidationErrorVisitor](../source/api_documentation/projects.md#esgvoc.api.report.ValidationErrorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept a validation error visitor.
 
 * **Parameters:**
-  **visitor** ([*ValidationErrorVisitor*](#esgvoc.api.report.ValidationErrorVisitor)) – The validation error visitor.
+  **visitor** ([*ValidationErrorVisitor*](../source/api_documentation/projects.md#esgvoc.api.report.ValidationErrorVisitor)) – The validation error visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -578,7 +578,7 @@ The class name of the issue for JSON serialization.
 
 ### *Pydantic model* esgvoc.api.report.UniverseTermError
 
-Bases: [`ValidationError`](#esgvoc.api.report.ValidationError)
+Bases: [`ValidationError`](../source/api_documentation/projects.md#esgvoc.api.report.ValidationError)
 
 A validation error on a term from the universe.
 
@@ -639,7 +639,7 @@ The data descriptor that the term belongs.
 
 JSON specification of the term.
 
-#### *field* term_kind *: [TermKind](miscellaneous.md#esgvoc.core.db.models.mixins.TermKind)* *[Required]*
+#### *field* term_kind *: [TermKind](../source/api_documentation/miscellaneous.md#esgvoc.core.db.models.mixins.TermKind)* *[Required]*
 
 The kind of term.
 
@@ -647,12 +647,12 @@ The kind of term.
 
 The given value that is invalid.
 
-#### accept(visitor: [ValidationErrorVisitor](#esgvoc.api.report.ValidationErrorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [ValidationErrorVisitor](../source/api_documentation/projects.md#esgvoc.api.report.ValidationErrorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept a validation error visitor.
 
 * **Parameters:**
-  **visitor** ([*ValidationErrorVisitor*](#esgvoc.api.report.ValidationErrorVisitor)) – The validation error visitor.
+  **visitor** ([*ValidationErrorVisitor*](../source/api_documentation/projects.md#esgvoc.api.report.ValidationErrorVisitor)) – The validation error visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -716,7 +716,7 @@ Generic class for the term validation error.
 
 JSON specification of the term.
 
-#### *field* term_kind *: [TermKind](miscellaneous.md#esgvoc.core.db.models.mixins.TermKind)* *[Required]*
+#### *field* term_kind *: [TermKind](../source/api_documentation/miscellaneous.md#esgvoc.core.db.models.mixins.TermKind)* *[Required]*
 
 The kind of term.
 
@@ -724,12 +724,12 @@ The kind of term.
 
 The given value that is invalid.
 
-#### *abstractmethod* accept(visitor: [ValidationErrorVisitor](#esgvoc.api.report.ValidationErrorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### *abstractmethod* accept(visitor: [ValidationErrorVisitor](../source/api_documentation/projects.md#esgvoc.api.report.ValidationErrorVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept a validation error visitor.
 
 * **Parameters:**
-  **visitor** ([*ValidationErrorVisitor*](#esgvoc.api.report.ValidationErrorVisitor)) – The validation error visitor.
+  **visitor** ([*ValidationErrorVisitor*](../source/api_documentation/projects.md#esgvoc.api.report.ValidationErrorVisitor)) – The validation error visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -745,11 +745,11 @@ Bases: [`Protocol`](https://docs.python.org/3/library/typing.html#typing.Protoco
 
 Specifications for a term validation error visitor.
 
-#### visit_project_term_error(error: [ProjectTermError](#esgvoc.api.report.ProjectTermError)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### visit_project_term_error(error: [ProjectTermError](../source/api_documentation/projects.md#esgvoc.api.report.ProjectTermError)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Visit a project term error.
 
-#### visit_universe_term_error(error: [UniverseTermError](#esgvoc.api.report.UniverseTermError)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### visit_universe_term_error(error: [UniverseTermError](../source/api_documentation/projects.md#esgvoc.api.report.UniverseTermError)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Visit a universe term error.
 
@@ -866,7 +866,7 @@ Term validation report.
 
 </details></p>
 
-#### *field* errors *: [list](https://docs.python.org/3/library/stdtypes.html#list)[[UniverseTermError](#esgvoc.api.report.UniverseTermError) | [ProjectTermError](#esgvoc.api.report.ProjectTermError)]* *[Required]*
+#### *field* errors *: [list](https://docs.python.org/3/library/stdtypes.html#list)[[UniverseTermError](../source/api_documentation/projects.md#esgvoc.api.report.UniverseTermError) | [ProjectTermError](../source/api_documentation/projects.md#esgvoc.api.report.ProjectTermError)]* *[Required]*
 
 The validation errors.
 

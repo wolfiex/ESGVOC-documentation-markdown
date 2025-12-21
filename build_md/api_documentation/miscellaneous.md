@@ -51,7 +51,7 @@ An item from the universe or a project (data descriptor, collection or term).
 
 The id of the item.
 
-#### *field* kind *: [ItemKind](#esgvoc.api.search.ItemKind)* *[Required]*
+#### *field* kind *: [ItemKind](../source/api_documentation/miscellaneous.md#esgvoc.api.search.ItemKind)* *[Required]*
 
 The kind of the item.
 
@@ -150,7 +150,7 @@ End written term.
 
 ### *exception* esgvoc.core.exceptions.EsgvocDbError
 
-Bases: [`EsgvocException`](#esgvoc.core.exceptions.EsgvocException)
+Bases: [`EsgvocException`](../source/api_documentation/miscellaneous.md#esgvoc.core.exceptions.EsgvocException)
 
 Represents errors relative to data base management.
 
@@ -162,18 +162,18 @@ Class base of all ESGVOC errors.
 
 ### *exception* esgvoc.core.exceptions.EsgvocNotFoundError
 
-Bases: [`EsgvocException`](#esgvoc.core.exceptions.EsgvocException)
+Bases: [`EsgvocException`](../source/api_documentation/miscellaneous.md#esgvoc.core.exceptions.EsgvocException)
 
 Represents the not found errors.
 
 ### *exception* esgvoc.core.exceptions.EsgvocNotImplementedError
 
-Bases: [`EsgvocException`](#esgvoc.core.exceptions.EsgvocException)
+Bases: [`EsgvocException`](../source/api_documentation/miscellaneous.md#esgvoc.core.exceptions.EsgvocException)
 
 Represents not implemented errors.
 
 ### *exception* esgvoc.core.exceptions.EsgvocValueError
 
-Bases: [`EsgvocException`](#esgvoc.core.exceptions.EsgvocException)
+Bases: [`EsgvocException`](../source/api_documentation/miscellaneous.md#esgvoc.core.exceptions.EsgvocException)
 
 Represents value errors.

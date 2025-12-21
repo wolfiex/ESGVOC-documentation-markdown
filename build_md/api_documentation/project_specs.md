@@ -191,7 +191,7 @@ Bases: [`BaseModel`](https://docs.pydantic.dev/latest/api/base_model/#pydantic.B
 
 </details></p>
 
-#### *field* extensions *: [list](https://docs.python.org/3/library/stdtypes.html#list)[[CatalogExtension](#esgvoc.api.project_specs.CatalogExtension)]* *[Required]*
+#### *field* extensions *: [list](https://docs.python.org/3/library/stdtypes.html#list)[[CatalogExtension](../source/api_documentation/project_specs.md#esgvoc.api.project_specs.CatalogExtension)]* *[Required]*
 
 The extensions of the catalog.
 
@@ -467,15 +467,15 @@ A catalog specifications.
 
 </details></p>
 
-#### *field* catalog_properties *: [CatalogProperties](#esgvoc.api.project_specs.CatalogProperties)* *[Required]*
+#### *field* catalog_properties *: [CatalogProperties](../source/api_documentation/project_specs.md#esgvoc.api.project_specs.CatalogProperties)* *[Required]*
 
 The properties of the catalog.
 
-#### *field* dataset_properties *: [list](https://docs.python.org/3/library/stdtypes.html#list)[[CatalogProperty](#esgvoc.api.project_specs.CatalogProperty)]* *[Required]*
+#### *field* dataset_properties *: [list](https://docs.python.org/3/library/stdtypes.html#list)[[CatalogProperty](../source/api_documentation/project_specs.md#esgvoc.api.project_specs.CatalogProperty)]* *[Required]*
 
 The properties of the dataset described in a catalog.
 
-#### *field* file_properties *: [list](https://docs.python.org/3/library/stdtypes.html#list)[[CatalogProperty](#esgvoc.api.project_specs.CatalogProperty)]* *[Required]*
+#### *field* file_properties *: [list](https://docs.python.org/3/library/stdtypes.html#list)[[CatalogProperty](../source/api_documentation/project_specs.md#esgvoc.api.project_specs.CatalogProperty)]* *[Required]*
 
 The properties of the files described in a catalog.
 
@@ -639,7 +639,7 @@ A DRS specification.
 
 </details></p>
 
-#### *field* parts *: [list](https://docs.python.org/3/library/stdtypes.html#list)[[DrsPart](#esgvoc.api.project_specs.DrsPart)]* *[Required]*
+#### *field* parts *: [list](https://docs.python.org/3/library/stdtypes.html#list)[[DrsPart](../source/api_documentation/project_specs.md#esgvoc.api.project_specs.DrsPart)]* *[Required]*
 
 The parts of the DRS specification.
 
@@ -655,7 +655,7 @@ General pattern for simples checks
 
 The textual separator string or character.
 
-#### *field* type *: [DrsType](#esgvoc.api.project_specs.DrsType)* *[Required]*
+#### *field* type *: [DrsType](../source/api_documentation/project_specs.md#esgvoc.api.project_specs.DrsType)* *[Required]*
 
 The type of the specification.
 
@@ -1039,11 +1039,11 @@ A project specifications.
 
 </details></p>
 
-#### *field* attr_specs *: [list](https://docs.python.org/3/library/stdtypes.html#list)[[AttributeProperty](#esgvoc.api.project_specs.AttributeProperty)] | [None](https://docs.python.org/3/library/constants.html#None)* *= None*
+#### *field* attr_specs *: [list](https://docs.python.org/3/library/stdtypes.html#list)[[AttributeProperty](../source/api_documentation/project_specs.md#esgvoc.api.project_specs.AttributeProperty)] | [None](https://docs.python.org/3/library/constants.html#None)* *= None*
 
 The NetCDF global attribute specifications of the project.
 
-#### *field* catalog_specs *: [CatalogSpecification](#esgvoc.api.project_specs.CatalogSpecification) | [None](https://docs.python.org/3/library/constants.html#None)* *= None*
+#### *field* catalog_specs *: [CatalogSpecification](../source/api_documentation/project_specs.md#esgvoc.api.project_specs.CatalogSpecification) | [None](https://docs.python.org/3/library/constants.html#None)* *= None*
 
 The catalog specifications of the project.
 
@@ -1051,7 +1051,7 @@ The catalog specifications of the project.
 
 The description of the project.
 
-#### *field* drs_specs *: [dict](https://docs.python.org/3/library/stdtypes.html#dict)[[DrsType](#esgvoc.api.project_specs.DrsType), [DrsSpecification](#esgvoc.api.project_specs.DrsSpecification)]* *[Required]*
+#### *field* drs_specs *: [dict](https://docs.python.org/3/library/stdtypes.html#dict)[[DrsType](../source/api_documentation/project_specs.md#esgvoc.api.project_specs.DrsType), [DrsSpecification](../source/api_documentation/project_specs.md#esgvoc.api.project_specs.DrsSpecification)]* *[Required]*
 
 The DRS specifications of the project (directory, file name and dataset id).
 

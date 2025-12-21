@@ -8,15 +8,15 @@ Bases: [`object`](https://docs.python.org/3/library/functions.html#object)
 
 Generic DRS application class.
 
-#### dataset_id_specs *: [DrsSpecification](project_specs.md#esgvoc.api.project_specs.DrsSpecification)*
+#### dataset_id_specs *: [DrsSpecification](../source/api_documentation/project_specs.md#esgvoc.api.project_specs.DrsSpecification)*
 
 The DRS dataset id specs of the project.
 
-#### directory_specs *: [DrsSpecification](project_specs.md#esgvoc.api.project_specs.DrsSpecification)*
+#### directory_specs *: [DrsSpecification](../source/api_documentation/project_specs.md#esgvoc.api.project_specs.DrsSpecification)*
 
 The DRS directory specs of the project.
 
-#### file_name_specs *: [DrsSpecification](project_specs.md#esgvoc.api.project_specs.DrsSpecification)*
+#### file_name_specs *: [DrsSpecification](../source/api_documentation/project_specs.md#esgvoc.api.project_specs.DrsSpecification)*
 
 The DRS file name specs of the project.
 
@@ -30,23 +30,23 @@ The project id.
 
 ### *class* esgvoc.apps.drs.validator.DrsValidator(project_id: [str](https://docs.python.org/3/library/stdtypes.html#str), pedantic: [bool](https://docs.python.org/3/library/functions.html#bool) = False)
 
-Bases: [`DrsApplication`](#esgvoc.apps.drs.validator.DrsApplication)
+Bases: [`DrsApplication`](../source/api_documentation/drs.md#esgvoc.apps.drs.validator.DrsApplication)
 
 Valid a DRS directory, dataset id and file name expression against a project.
 
-#### validate(drs_expression: [str](https://docs.python.org/3/library/stdtypes.html#str), drs_type: [DrsType](project_specs.md#esgvoc.api.project_specs.DrsType) | [str](https://docs.python.org/3/library/stdtypes.html#str)) → [DrsValidationReport](#esgvoc.apps.drs.report.DrsValidationReport)
+#### validate(drs_expression: [str](https://docs.python.org/3/library/stdtypes.html#str), drs_type: [DrsType](../source/api_documentation/project_specs.md#esgvoc.api.project_specs.DrsType) | [str](https://docs.python.org/3/library/stdtypes.html#str)) → [DrsValidationReport](../source/api_documentation/drs.md#esgvoc.apps.drs.report.DrsValidationReport)
 
 Validate a DRS expression.
 
 * **Parameters:**
   * **drs_expression** ([*str*](https://docs.python.org/3/library/stdtypes.html#str)) – A DRS expression.
-  * **drs_type** ([*DrsType*](project_specs.md#esgvoc.api.project_specs.DrsType) *|*[*str*](https://docs.python.org/3/library/stdtypes.html#str)) – The type of the given DRS expression (directory, file_name or dataset_id)
+  * **drs_type** ([*DrsType*](../source/api_documentation/project_specs.md#esgvoc.api.project_specs.DrsType) *|*[*str*](https://docs.python.org/3/library/stdtypes.html#str)) – The type of the given DRS expression (directory, file_name or dataset_id)
 * **Returns:**
   A validation report.
 * **Return type:**
-  [DrsValidationReport](#esgvoc.apps.drs.report.DrsValidationReport)
+  [DrsValidationReport](../source/api_documentation/drs.md#esgvoc.apps.drs.report.DrsValidationReport)
 
-#### validate_dataset_id(drs_expression: [str](https://docs.python.org/3/library/stdtypes.html#str)) → [DrsValidationReport](#esgvoc.apps.drs.report.DrsValidationReport)
+#### validate_dataset_id(drs_expression: [str](https://docs.python.org/3/library/stdtypes.html#str)) → [DrsValidationReport](../source/api_documentation/drs.md#esgvoc.apps.drs.report.DrsValidationReport)
 
 Validate a DRS dataset id expression.
 
@@ -55,9 +55,9 @@ Validate a DRS dataset id expression.
 * **Returns:**
   A validation report.
 * **Return type:**
-  [DrsValidationReport](#esgvoc.apps.drs.report.DrsValidationReport)
+  [DrsValidationReport](../source/api_documentation/drs.md#esgvoc.apps.drs.report.DrsValidationReport)
 
-#### validate_directory(drs_expression: [str](https://docs.python.org/3/library/stdtypes.html#str), prefix: [str](https://docs.python.org/3/library/stdtypes.html#str) | [None](https://docs.python.org/3/library/constants.html#None) = None) → [DrsValidationReport](#esgvoc.apps.drs.report.DrsValidationReport)
+#### validate_directory(drs_expression: [str](https://docs.python.org/3/library/stdtypes.html#str), prefix: [str](https://docs.python.org/3/library/stdtypes.html#str) | [None](https://docs.python.org/3/library/constants.html#None) = None) → [DrsValidationReport](../source/api_documentation/drs.md#esgvoc.apps.drs.report.DrsValidationReport)
 
 Validate a DRS directory expression.
 
@@ -67,9 +67,9 @@ Validate a DRS directory expression.
 * **Returns:**
   A validation report.
 * **Return type:**
-  [DrsValidationReport](#esgvoc.apps.drs.report.DrsValidationReport)
+  [DrsValidationReport](../source/api_documentation/drs.md#esgvoc.apps.drs.report.DrsValidationReport)
 
-#### validate_file_name(drs_expression: [str](https://docs.python.org/3/library/stdtypes.html#str)) → [DrsValidationReport](#esgvoc.apps.drs.report.DrsValidationReport)
+#### validate_file_name(drs_expression: [str](https://docs.python.org/3/library/stdtypes.html#str)) → [DrsValidationReport](../source/api_documentation/drs.md#esgvoc.apps.drs.report.DrsValidationReport)
 
 Validate a file name expression.
 
@@ -78,17 +78,17 @@ Validate a file name expression.
 * **Returns:**
   A validation report.
 * **Return type:**
-  [DrsValidationReport](#esgvoc.apps.drs.report.DrsValidationReport)
+  [DrsValidationReport](../source/api_documentation/drs.md#esgvoc.apps.drs.report.DrsValidationReport)
 
-#### dataset_id_specs *: [DrsSpecification](project_specs.md#esgvoc.api.project_specs.DrsSpecification)*
+#### dataset_id_specs *: [DrsSpecification](../source/api_documentation/project_specs.md#esgvoc.api.project_specs.DrsSpecification)*
 
 The DRS dataset id specs of the project.
 
-#### directory_specs *: [DrsSpecification](project_specs.md#esgvoc.api.project_specs.DrsSpecification)*
+#### directory_specs *: [DrsSpecification](../source/api_documentation/project_specs.md#esgvoc.api.project_specs.DrsSpecification)*
 
 The DRS directory specs of the project.
 
-#### file_name_specs *: [DrsSpecification](project_specs.md#esgvoc.api.project_specs.DrsSpecification)*
+#### file_name_specs *: [DrsSpecification](../source/api_documentation/project_specs.md#esgvoc.api.project_specs.DrsSpecification)*
 
 The DRS file name specs of the project.
 
@@ -104,12 +104,12 @@ The project id.
 
 ### *class* esgvoc.apps.drs.generator.DrsGenerator(project_id: [str](https://docs.python.org/3/library/stdtypes.html#str), pedantic: [bool](https://docs.python.org/3/library/functions.html#bool) = False)
 
-Bases: [`DrsApplication`](#esgvoc.apps.drs.validator.DrsApplication)
+Bases: [`DrsApplication`](../source/api_documentation/drs.md#esgvoc.apps.drs.validator.DrsApplication)
 
 Generate a directory, dataset id and file name expression specified by the given project from
 a mapping of collection ids and terms or an unordered bag of terms.
 
-#### generate_dataset_id_from_bag_of_terms(terms: [Iterable](https://docs.python.org/3/library/typing.html#typing.Iterable)[[str](https://docs.python.org/3/library/stdtypes.html#str)]) → [DrsGenerationReport](#esgvoc.apps.drs.report.DrsGenerationReport)
+#### generate_dataset_id_from_bag_of_terms(terms: [Iterable](https://docs.python.org/3/library/typing.html#typing.Iterable)[[str](https://docs.python.org/3/library/stdtypes.html#str)]) → [DrsGenerationReport](../source/api_documentation/drs.md#esgvoc.apps.drs.report.DrsGenerationReport)
 
 Generate a dataset id DRS expression from an unordered bag of terms.
 
@@ -120,7 +120,7 @@ Generate a dataset id DRS expression from an unordered bag of terms.
 * **Return type:**
   DrsGeneratorReport
 
-#### generate_dataset_id_from_mapping(mapping: [Mapping](https://docs.python.org/3/library/typing.html#typing.Mapping)[[str](https://docs.python.org/3/library/stdtypes.html#str), [str](https://docs.python.org/3/library/stdtypes.html#str)]) → [DrsGenerationReport](#esgvoc.apps.drs.report.DrsGenerationReport)
+#### generate_dataset_id_from_mapping(mapping: [Mapping](https://docs.python.org/3/library/typing.html#typing.Mapping)[[str](https://docs.python.org/3/library/stdtypes.html#str), [str](https://docs.python.org/3/library/stdtypes.html#str)]) → [DrsGenerationReport](../source/api_documentation/drs.md#esgvoc.apps.drs.report.DrsGenerationReport)
 
 Generate a dataset id DRS expression from a mapping of collection ids and terms.
 
@@ -131,7 +131,7 @@ Generate a dataset id DRS expression from a mapping of collection ids and terms.
 * **Return type:**
   DrsGeneratorReport
 
-#### generate_directory_from_bag_of_terms(terms: [Iterable](https://docs.python.org/3/library/typing.html#typing.Iterable)[[str](https://docs.python.org/3/library/stdtypes.html#str)]) → [DrsGenerationReport](#esgvoc.apps.drs.report.DrsGenerationReport)
+#### generate_directory_from_bag_of_terms(terms: [Iterable](https://docs.python.org/3/library/typing.html#typing.Iterable)[[str](https://docs.python.org/3/library/stdtypes.html#str)]) → [DrsGenerationReport](../source/api_documentation/drs.md#esgvoc.apps.drs.report.DrsGenerationReport)
 
 Generate a directory DRS expression from an unordered bag of terms.
 
@@ -142,7 +142,7 @@ Generate a directory DRS expression from an unordered bag of terms.
 * **Return type:**
   DrsGeneratorReport
 
-#### generate_directory_from_mapping(mapping: [Mapping](https://docs.python.org/3/library/typing.html#typing.Mapping)[[str](https://docs.python.org/3/library/stdtypes.html#str), [str](https://docs.python.org/3/library/stdtypes.html#str)]) → [DrsGenerationReport](#esgvoc.apps.drs.report.DrsGenerationReport)
+#### generate_directory_from_mapping(mapping: [Mapping](https://docs.python.org/3/library/typing.html#typing.Mapping)[[str](https://docs.python.org/3/library/stdtypes.html#str), [str](https://docs.python.org/3/library/stdtypes.html#str)]) → [DrsGenerationReport](../source/api_documentation/drs.md#esgvoc.apps.drs.report.DrsGenerationReport)
 
 Generate a directory DRS expression from a mapping of collection ids and terms.
 
@@ -153,7 +153,7 @@ Generate a directory DRS expression from a mapping of collection ids and terms.
 * **Return type:**
   DrsGeneratorReport
 
-#### generate_file_name_from_bag_of_terms(terms: [Iterable](https://docs.python.org/3/library/typing.html#typing.Iterable)[[str](https://docs.python.org/3/library/stdtypes.html#str)]) → [DrsGenerationReport](#esgvoc.apps.drs.report.DrsGenerationReport)
+#### generate_file_name_from_bag_of_terms(terms: [Iterable](https://docs.python.org/3/library/typing.html#typing.Iterable)[[str](https://docs.python.org/3/library/stdtypes.html#str)]) → [DrsGenerationReport](../source/api_documentation/drs.md#esgvoc.apps.drs.report.DrsGenerationReport)
 
 Generate a file name DRS expression from an unordered bag of terms.
 The file name extension is append automatically, according to the DRS specification,
@@ -166,7 +166,7 @@ so none of the terms given must include the extension.
 * **Return type:**
   DrsGeneratorReport
 
-#### generate_file_name_from_mapping(mapping: [Mapping](https://docs.python.org/3/library/typing.html#typing.Mapping)[[str](https://docs.python.org/3/library/stdtypes.html#str), [str](https://docs.python.org/3/library/stdtypes.html#str)]) → [DrsGenerationReport](#esgvoc.apps.drs.report.DrsGenerationReport)
+#### generate_file_name_from_mapping(mapping: [Mapping](https://docs.python.org/3/library/typing.html#typing.Mapping)[[str](https://docs.python.org/3/library/stdtypes.html#str), [str](https://docs.python.org/3/library/stdtypes.html#str)]) → [DrsGenerationReport](../source/api_documentation/drs.md#esgvoc.apps.drs.report.DrsGenerationReport)
 
 Generate a file name DRS expression from a mapping of collection ids and terms.
 The file name extension is append automatically, according to the DRS specification,
@@ -179,39 +179,39 @@ so none of the terms given must include the extension.
 * **Return type:**
   DrsGeneratorReport
 
-#### generate_from_bag_of_terms(terms: [Iterable](https://docs.python.org/3/library/typing.html#typing.Iterable)[[str](https://docs.python.org/3/library/stdtypes.html#str)], drs_type: [DrsType](project_specs.md#esgvoc.api.project_specs.DrsType) | [str](https://docs.python.org/3/library/stdtypes.html#str)) → [DrsGenerationReport](#esgvoc.apps.drs.report.DrsGenerationReport)
+#### generate_from_bag_of_terms(terms: [Iterable](https://docs.python.org/3/library/typing.html#typing.Iterable)[[str](https://docs.python.org/3/library/stdtypes.html#str)], drs_type: [DrsType](../source/api_documentation/project_specs.md#esgvoc.api.project_specs.DrsType) | [str](https://docs.python.org/3/library/stdtypes.html#str)) → [DrsGenerationReport](../source/api_documentation/drs.md#esgvoc.apps.drs.report.DrsGenerationReport)
 
 Generate a DRS expression from an unordered bag of terms.
 
 * **Parameters:**
   * **terms** (*Iterable* *[*[*str*](https://docs.python.org/3/library/stdtypes.html#str) *]*) – An unordered bag of terms.
-  * **drs_type** ([*DrsType*](project_specs.md#esgvoc.api.project_specs.DrsType) *|*[*str*](https://docs.python.org/3/library/stdtypes.html#str)) – The type of the given DRS expression (directory, file_name or dataset_id)
+  * **drs_type** ([*DrsType*](../source/api_documentation/project_specs.md#esgvoc.api.project_specs.DrsType) *|*[*str*](https://docs.python.org/3/library/stdtypes.html#str)) – The type of the given DRS expression (directory, file_name or dataset_id)
 * **Returns:**
   A generation report.
 * **Return type:**
   DrsGeneratorReport
 
-#### generate_from_mapping(mapping: [Mapping](https://docs.python.org/3/library/typing.html#typing.Mapping)[[str](https://docs.python.org/3/library/stdtypes.html#str), [str](https://docs.python.org/3/library/stdtypes.html#str)], drs_type: [DrsType](project_specs.md#esgvoc.api.project_specs.DrsType) | [str](https://docs.python.org/3/library/stdtypes.html#str)) → [DrsGenerationReport](#esgvoc.apps.drs.report.DrsGenerationReport)
+#### generate_from_mapping(mapping: [Mapping](https://docs.python.org/3/library/typing.html#typing.Mapping)[[str](https://docs.python.org/3/library/stdtypes.html#str), [str](https://docs.python.org/3/library/stdtypes.html#str)], drs_type: [DrsType](../source/api_documentation/project_specs.md#esgvoc.api.project_specs.DrsType) | [str](https://docs.python.org/3/library/stdtypes.html#str)) → [DrsGenerationReport](../source/api_documentation/drs.md#esgvoc.apps.drs.report.DrsGenerationReport)
 
 Generate a DRS expression from a mapping of collection ids and terms.
 
 * **Parameters:**
   * **mapping** (*Mapping* *[*[*str*](https://docs.python.org/3/library/stdtypes.html#str) *,* [*str*](https://docs.python.org/3/library/stdtypes.html#str) *]*) – A mapping of collection ids (keys) and terms (values).
-  * **drs_type** ([*DrsType*](project_specs.md#esgvoc.api.project_specs.DrsType) *|*[*str*](https://docs.python.org/3/library/stdtypes.html#str)) – The type of the given DRS expression (directory, file_name or dataset_id)
+  * **drs_type** ([*DrsType*](../source/api_documentation/project_specs.md#esgvoc.api.project_specs.DrsType) *|*[*str*](https://docs.python.org/3/library/stdtypes.html#str)) – The type of the given DRS expression (directory, file_name or dataset_id)
 * **Returns:**
   A generation report.
 * **Return type:**
   DrsGeneratorReport
 
-#### dataset_id_specs *: [DrsSpecification](project_specs.md#esgvoc.api.project_specs.DrsSpecification)*
+#### dataset_id_specs *: [DrsSpecification](../source/api_documentation/project_specs.md#esgvoc.api.project_specs.DrsSpecification)*
 
 The DRS dataset id specs of the project.
 
-#### directory_specs *: [DrsSpecification](project_specs.md#esgvoc.api.project_specs.DrsSpecification)*
+#### directory_specs *: [DrsSpecification](../source/api_documentation/project_specs.md#esgvoc.api.project_specs.DrsSpecification)*
 
 The DRS directory specs of the project.
 
-#### file_name_specs *: [DrsSpecification](project_specs.md#esgvoc.api.project_specs.DrsSpecification)*
+#### file_name_specs *: [DrsSpecification](../source/api_documentation/project_specs.md#esgvoc.api.project_specs.DrsSpecification)*
 
 The DRS file name specs of the project.
 
@@ -227,7 +227,7 @@ The project id.
 
 ### *Pydantic model* esgvoc.apps.drs.report.AssignedTerm
 
-Bases: [`GenerationIssue`](#esgvoc.apps.drs.report.GenerationIssue)
+Bases: [`GenerationIssue`](../source/api_documentation/drs.md#esgvoc.apps.drs.report.GenerationIssue)
 
 Represents a decision of the Generator to assign this term to the collection, that may not be.
 relevant.
@@ -276,12 +276,12 @@ The class name of the issue for JSON serialization/deserialization.
 
 The term.
 
-#### accept(visitor: [GenerationIssueVisitor](#esgvoc.apps.drs.report.GenerationIssueVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [GenerationIssueVisitor](../source/api_documentation/drs.md#esgvoc.apps.drs.report.GenerationIssueVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an DRS generation issue visitor.
 
 * **Parameters:**
-  **visitor** ([*GenerationIssueVisitor*](#esgvoc.apps.drs.report.GenerationIssueVisitor)) – The DRS generation issue visitor.
+  **visitor** ([*GenerationIssueVisitor*](../source/api_documentation/drs.md#esgvoc.apps.drs.report.GenerationIssueVisitor)) – The DRS generation issue visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -289,7 +289,7 @@ Accept an DRS generation issue visitor.
 
 ### *Pydantic model* esgvoc.apps.drs.report.BlankTerm
 
-Bases: [`ParsingIssue`](#esgvoc.apps.drs.report.ParsingIssue)
+Bases: [`ParsingIssue`](../source/api_documentation/drs.md#esgvoc.apps.drs.report.ParsingIssue)
 
 Represents a problem of blank term in the DRS expression (i.e., space[s] surrounded by separators).
 
@@ -333,12 +333,12 @@ the column of faulty characters.
 
 The class name of the issue for JSON serialization/deserialization.
 
-#### accept(visitor: [ParsingIssueVisitor](#esgvoc.apps.drs.report.ParsingIssueVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [ParsingIssueVisitor](../source/api_documentation/drs.md#esgvoc.apps.drs.report.ParsingIssueVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an DRS parsing issue visitor.
 
 * **Parameters:**
-  **visitor** ([*ParsingIssueVisitor*](#esgvoc.apps.drs.report.ParsingIssueVisitor)) – The DRS parsing issue visitor.
+  **visitor** ([*ParsingIssueVisitor*](../source/api_documentation/drs.md#esgvoc.apps.drs.report.ParsingIssueVisitor)) – The DRS parsing issue visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -346,7 +346,7 @@ Accept an DRS parsing issue visitor.
 
 ### *Pydantic model* esgvoc.apps.drs.report.ComplianceIssue
 
-Bases: [`DrsIssue`](#esgvoc.apps.drs.report.DrsIssue)
+Bases: [`DrsIssue`](../source/api_documentation/drs.md#esgvoc.apps.drs.report.DrsIssue)
 
 Generic class for the compliance issues.
 
@@ -375,12 +375,12 @@ Generic class for the compliance issues.
 
 The class name of the issue for JSON serialization/deserialization.
 
-#### *abstractmethod* accept(visitor: [ComplianceIssueVisitor](#esgvoc.apps.drs.report.ComplianceIssueVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### *abstractmethod* accept(visitor: [ComplianceIssueVisitor](../source/api_documentation/drs.md#esgvoc.apps.drs.report.ComplianceIssueVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an DRS compliance issue visitor.
 
 * **Parameters:**
-  **visitor** ([*ComplianceIssueVisitor*](#esgvoc.apps.drs.report.ComplianceIssueVisitor)) – The DRS compliance issue visitor.
+  **visitor** ([*ComplianceIssueVisitor*](../source/api_documentation/drs.md#esgvoc.apps.drs.report.ComplianceIssueVisitor)) – The DRS compliance issue visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -392,25 +392,25 @@ Bases: [`Protocol`](https://docs.python.org/3/library/typing.html#typing.Protoco
 
 Specifications for a compliance issues visitor.
 
-#### visit_extra_term_issue(issue: [ExtraTerm](#esgvoc.apps.drs.report.ExtraTerm)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### visit_extra_term_issue(issue: [ExtraTerm](../source/api_documentation/drs.md#esgvoc.apps.drs.report.ExtraTerm)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Visit an extra term issue.
 
-#### visit_filename_extension_issue(issue: [FileNameExtensionIssue](#esgvoc.apps.drs.report.FileNameExtensionIssue)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### visit_filename_extension_issue(issue: [FileNameExtensionIssue](../source/api_documentation/drs.md#esgvoc.apps.drs.report.FileNameExtensionIssue)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Visit a file name extension issue.
 
-#### visit_invalid_term_issue(issue: [InvalidTerm](#esgvoc.apps.drs.report.InvalidTerm)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### visit_invalid_term_issue(issue: [InvalidTerm](../source/api_documentation/drs.md#esgvoc.apps.drs.report.InvalidTerm)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Visit an invalid term issue.
 
-#### visit_missing_term_issue(issue: [MissingTerm](#esgvoc.apps.drs.report.MissingTerm)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### visit_missing_term_issue(issue: [MissingTerm](../source/api_documentation/drs.md#esgvoc.apps.drs.report.MissingTerm)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Visit a missing term issue.
 
 ### *Pydantic model* esgvoc.apps.drs.report.ConflictingCollections
 
-Bases: [`GenerationIssue`](#esgvoc.apps.drs.report.GenerationIssue)
+Bases: [`GenerationIssue`](../source/api_documentation/drs.md#esgvoc.apps.drs.report.GenerationIssue)
 
 Represents a problem while inferring a mapping collection - term in the generation
 of a DRS expression based on a bag of terms. The problem is that these collections shares the
@@ -466,12 +466,12 @@ The class name of the issue for JSON serialization/deserialization.
 
 The shared terms.
 
-#### accept(visitor: [GenerationIssueVisitor](#esgvoc.apps.drs.report.GenerationIssueVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [GenerationIssueVisitor](../source/api_documentation/drs.md#esgvoc.apps.drs.report.GenerationIssueVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an DRS generation issue visitor.
 
 * **Parameters:**
-  **visitor** ([*GenerationIssueVisitor*](#esgvoc.apps.drs.report.GenerationIssueVisitor)) – The DRS generation issue visitor.
+  **visitor** ([*GenerationIssueVisitor*](../source/api_documentation/drs.md#esgvoc.apps.drs.report.GenerationIssueVisitor)) – The DRS generation issue visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -479,7 +479,7 @@ Accept an DRS generation issue visitor.
 
 ### *Pydantic model* esgvoc.apps.drs.report.DrsGenerationReport
 
-Bases: [`DrsReport`](#esgvoc.apps.drs.report.DrsReport)
+Bases: [`DrsReport`](../source/api_documentation/drs.md#esgvoc.apps.drs.report.DrsReport)
 
 The DRS generation report.
 
@@ -740,7 +740,7 @@ The DRS generation report.
 
 </details></p>
 
-#### *field* errors *: [list](https://docs.python.org/3/library/stdtypes.html#list)[[Annotated](https://docs.python.org/3/library/typing.html#typing.Annotated)[[AssignedTerm](#esgvoc.apps.drs.report.AssignedTerm) | [ConflictingCollections](#esgvoc.apps.drs.report.ConflictingCollections) | [InvalidTerm](#esgvoc.apps.drs.report.InvalidTerm) | [MissingTerm](#esgvoc.apps.drs.report.MissingTerm) | [TooManyTermCollection](#esgvoc.apps.drs.report.TooManyTermCollection), FieldInfo(annotation=NoneType, required=True, discriminator='kind')]]* *[Required]*
+#### *field* errors *: [list](https://docs.python.org/3/library/stdtypes.html#list)[[Annotated](https://docs.python.org/3/library/typing.html#typing.Annotated)[[AssignedTerm](../source/api_documentation/drs.md#esgvoc.apps.drs.report.AssignedTerm) | [ConflictingCollections](../source/api_documentation/drs.md#esgvoc.apps.drs.report.ConflictingCollections) | [InvalidTerm](../source/api_documentation/drs.md#esgvoc.apps.drs.report.InvalidTerm) | [MissingTerm](../source/api_documentation/drs.md#esgvoc.apps.drs.report.MissingTerm) | [TooManyTermCollection](../source/api_documentation/drs.md#esgvoc.apps.drs.report.TooManyTermCollection), FieldInfo(annotation=NoneType, required=True, discriminator='kind')]]* *[Required]*
 
 A list of DRS generation issues that are considered as errors.
 
@@ -760,11 +760,11 @@ The mapping inferred from the given bag of terms (same mapping otherwise).
 
 The project id associated to the result of the DRS application.
 
-#### *field* type *: [DrsType](project_specs.md#esgvoc.api.project_specs.DrsType)* *[Required]*
+#### *field* type *: [DrsType](../source/api_documentation/project_specs.md#esgvoc.api.project_specs.DrsType)* *[Required]*
 
 The type of the DRS
 
-#### *field* warnings *: [list](https://docs.python.org/3/library/stdtypes.html#list)[[Annotated](https://docs.python.org/3/library/typing.html#typing.Annotated)[[AssignedTerm](#esgvoc.apps.drs.report.AssignedTerm) | [MissingTerm](#esgvoc.apps.drs.report.MissingTerm), FieldInfo(annotation=NoneType, required=True, discriminator='kind')]]* *[Required]*
+#### *field* warnings *: [list](https://docs.python.org/3/library/stdtypes.html#list)[[Annotated](https://docs.python.org/3/library/typing.html#typing.Annotated)[[AssignedTerm](../source/api_documentation/drs.md#esgvoc.apps.drs.report.AssignedTerm) | [MissingTerm](../source/api_documentation/drs.md#esgvoc.apps.drs.report.MissingTerm), FieldInfo(annotation=NoneType, required=True, discriminator='kind')]]* *[Required]*
 
 A list of DRS generation issues that are considered as warnings.
 
@@ -890,7 +890,7 @@ A list of DRS issues that are considered as errors.
 
 The project id associated to the result of the DRS application.
 
-#### *field* type *: [DrsType](project_specs.md#esgvoc.api.project_specs.DrsType)* *[Required]*
+#### *field* type *: [DrsType](../source/api_documentation/project_specs.md#esgvoc.api.project_specs.DrsType)* *[Required]*
 
 The type of the DRS
 
@@ -912,7 +912,7 @@ The correctness of the result of the DRS application.
 
 ### *Pydantic model* esgvoc.apps.drs.report.DrsValidationReport
 
-Bases: [`DrsReport`](#esgvoc.apps.drs.report.DrsReport)
+Bases: [`DrsReport`](../source/api_documentation/drs.md#esgvoc.apps.drs.report.DrsReport)
 
 The DRS validation report class.
 
@@ -1283,7 +1283,7 @@ The DRS validation report class.
 
 </details></p>
 
-#### *field* errors *: [list](https://docs.python.org/3/library/stdtypes.html#list)[[Annotated](https://docs.python.org/3/library/typing.html#typing.Annotated)[[BlankTerm](#esgvoc.apps.drs.report.BlankTerm) | [ExtraChar](#esgvoc.apps.drs.report.ExtraChar) | [ExtraSeparator](#esgvoc.apps.drs.report.ExtraSeparator) | [ExtraTerm](#esgvoc.apps.drs.report.ExtraTerm) | [FileNameExtensionIssue](#esgvoc.apps.drs.report.FileNameExtensionIssue) | [InvalidTerm](#esgvoc.apps.drs.report.InvalidTerm) | [MissingTerm](#esgvoc.apps.drs.report.MissingTerm) | [Space](#esgvoc.apps.drs.report.Space) | [Unparsable](#esgvoc.apps.drs.report.Unparsable), FieldInfo(annotation=NoneType, required=True, discriminator='kind')]]* *[Required]*
+#### *field* errors *: [list](https://docs.python.org/3/library/stdtypes.html#list)[[Annotated](https://docs.python.org/3/library/typing.html#typing.Annotated)[[BlankTerm](../source/api_documentation/drs.md#esgvoc.apps.drs.report.BlankTerm) | [ExtraChar](../source/api_documentation/drs.md#esgvoc.apps.drs.report.ExtraChar) | [ExtraSeparator](../source/api_documentation/drs.md#esgvoc.apps.drs.report.ExtraSeparator) | [ExtraTerm](../source/api_documentation/drs.md#esgvoc.apps.drs.report.ExtraTerm) | [FileNameExtensionIssue](../source/api_documentation/drs.md#esgvoc.apps.drs.report.FileNameExtensionIssue) | [InvalidTerm](../source/api_documentation/drs.md#esgvoc.apps.drs.report.InvalidTerm) | [MissingTerm](../source/api_documentation/drs.md#esgvoc.apps.drs.report.MissingTerm) | [Space](../source/api_documentation/drs.md#esgvoc.apps.drs.report.Space) | [Unparsable](../source/api_documentation/drs.md#esgvoc.apps.drs.report.Unparsable), FieldInfo(annotation=NoneType, required=True, discriminator='kind')]]* *[Required]*
 
 A list of DRS parsing and compliance issues that are considered as errors.
 
@@ -1299,11 +1299,11 @@ The mapping of collection ids to validated terms.
 
 The project id associated to the result of the DRS application.
 
-#### *field* type *: [DrsType](project_specs.md#esgvoc.api.project_specs.DrsType)* *[Required]*
+#### *field* type *: [DrsType](../source/api_documentation/project_specs.md#esgvoc.api.project_specs.DrsType)* *[Required]*
 
 The type of the DRS
 
-#### *field* warnings *: [list](https://docs.python.org/3/library/stdtypes.html#list)[[Annotated](https://docs.python.org/3/library/typing.html#typing.Annotated)[[ExtraSeparator](#esgvoc.apps.drs.report.ExtraSeparator) | [MissingTerm](#esgvoc.apps.drs.report.MissingTerm) | [Space](#esgvoc.apps.drs.report.Space), FieldInfo(annotation=NoneType, required=True, discriminator='kind')]]* *[Required]*
+#### *field* warnings *: [list](https://docs.python.org/3/library/stdtypes.html#list)[[Annotated](https://docs.python.org/3/library/typing.html#typing.Annotated)[[ExtraSeparator](../source/api_documentation/drs.md#esgvoc.apps.drs.report.ExtraSeparator) | [MissingTerm](../source/api_documentation/drs.md#esgvoc.apps.drs.report.MissingTerm) | [Space](../source/api_documentation/drs.md#esgvoc.apps.drs.report.Space), FieldInfo(annotation=NoneType, required=True, discriminator='kind')]]* *[Required]*
 
 A list of DRS parsing and compliance issues that are considered as warnings.
 
@@ -1321,7 +1321,7 @@ The correctness of the result of the DRS application.
 
 ### *Pydantic model* esgvoc.apps.drs.report.ExtraChar
 
-Bases: [`ParsingIssue`](#esgvoc.apps.drs.report.ParsingIssue)
+Bases: [`ParsingIssue`](../source/api_documentation/drs.md#esgvoc.apps.drs.report.ParsingIssue)
 
 Represents a problem of extra characters at the end of the DRS expression.
 
@@ -1365,12 +1365,12 @@ the column of faulty characters.
 
 The class name of the issue for JSON serialization/deserialization.
 
-#### accept(visitor: [ParsingIssueVisitor](#esgvoc.apps.drs.report.ParsingIssueVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [ParsingIssueVisitor](../source/api_documentation/drs.md#esgvoc.apps.drs.report.ParsingIssueVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an DRS parsing issue visitor.
 
 * **Parameters:**
-  **visitor** ([*ParsingIssueVisitor*](#esgvoc.apps.drs.report.ParsingIssueVisitor)) – The DRS parsing issue visitor.
+  **visitor** ([*ParsingIssueVisitor*](../source/api_documentation/drs.md#esgvoc.apps.drs.report.ParsingIssueVisitor)) – The DRS parsing issue visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -1378,7 +1378,7 @@ Accept an DRS parsing issue visitor.
 
 ### *Pydantic model* esgvoc.apps.drs.report.ExtraSeparator
 
-Bases: [`ParsingIssue`](#esgvoc.apps.drs.report.ParsingIssue)
+Bases: [`ParsingIssue`](../source/api_documentation/drs.md#esgvoc.apps.drs.report.ParsingIssue)
 
 Represents a problem of multiple separator occurrences in the DRS expression.
 
@@ -1422,12 +1422,12 @@ the column of faulty characters.
 
 The class name of the issue for JSON serialization/deserialization.
 
-#### accept(visitor: [ParsingIssueVisitor](#esgvoc.apps.drs.report.ParsingIssueVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [ParsingIssueVisitor](../source/api_documentation/drs.md#esgvoc.apps.drs.report.ParsingIssueVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an DRS parsing issue visitor.
 
 * **Parameters:**
-  **visitor** ([*ParsingIssueVisitor*](#esgvoc.apps.drs.report.ParsingIssueVisitor)) – The DRS parsing issue visitor.
+  **visitor** ([*ParsingIssueVisitor*](../source/api_documentation/drs.md#esgvoc.apps.drs.report.ParsingIssueVisitor)) – The DRS parsing issue visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -1435,7 +1435,7 @@ Accept an DRS parsing issue visitor.
 
 ### *Pydantic model* esgvoc.apps.drs.report.ExtraTerm
 
-Bases: [`TermIssue`](#esgvoc.apps.drs.report.TermIssue)
+Bases: [`TermIssue`](../source/api_documentation/drs.md#esgvoc.apps.drs.report.TermIssue)
 
 Represents a problem of extra term at the end of the given DRS expression.
 All part of the DRS specification have been processed and this term is not necessary
@@ -1502,12 +1502,12 @@ The faulty term.
 
 The position of the faulty term (the part position, not the column of the characters.
 
-#### accept(visitor: [ComplianceIssueVisitor](#esgvoc.apps.drs.report.ComplianceIssueVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [ComplianceIssueVisitor](../source/api_documentation/drs.md#esgvoc.apps.drs.report.ComplianceIssueVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an DRS compliance issue visitor.
 
 * **Parameters:**
-  **visitor** ([*ComplianceIssueVisitor*](#esgvoc.apps.drs.report.ComplianceIssueVisitor)) – The DRS compliance issue visitor.
+  **visitor** ([*ComplianceIssueVisitor*](../source/api_documentation/drs.md#esgvoc.apps.drs.report.ComplianceIssueVisitor)) – The DRS compliance issue visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -1515,7 +1515,7 @@ Accept an DRS compliance issue visitor.
 
 ### *Pydantic model* esgvoc.apps.drs.report.FileNameExtensionIssue
 
-Bases: [`ComplianceIssue`](#esgvoc.apps.drs.report.ComplianceIssue)
+Bases: [`ComplianceIssue`](../source/api_documentation/drs.md#esgvoc.apps.drs.report.ComplianceIssue)
 
 Represents a problem on the given file name extension (missing or not compliant).
 
@@ -1554,12 +1554,12 @@ The expected file name extension.
 
 The class name of the issue for JSON serialization/deserialization.
 
-#### accept(visitor: [ComplianceIssueVisitor](#esgvoc.apps.drs.report.ComplianceIssueVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [ComplianceIssueVisitor](../source/api_documentation/drs.md#esgvoc.apps.drs.report.ComplianceIssueVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an DRS compliance issue visitor.
 
 * **Parameters:**
-  **visitor** ([*ComplianceIssueVisitor*](#esgvoc.apps.drs.report.ComplianceIssueVisitor)) – The DRS compliance issue visitor.
+  **visitor** ([*ComplianceIssueVisitor*](../source/api_documentation/drs.md#esgvoc.apps.drs.report.ComplianceIssueVisitor)) – The DRS compliance issue visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -1567,7 +1567,7 @@ Accept an DRS compliance issue visitor.
 
 ### *Pydantic model* esgvoc.apps.drs.report.GenerationIssue
 
-Bases: [`DrsIssue`](#esgvoc.apps.drs.report.DrsIssue)
+Bases: [`DrsIssue`](../source/api_documentation/drs.md#esgvoc.apps.drs.report.DrsIssue)
 
 Generic class for the DRS generation issues.
 
@@ -1596,12 +1596,12 @@ Generic class for the DRS generation issues.
 
 The class name of the issue for JSON serialization/deserialization.
 
-#### *abstractmethod* accept(visitor: [GenerationIssueVisitor](#esgvoc.apps.drs.report.GenerationIssueVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### *abstractmethod* accept(visitor: [GenerationIssueVisitor](../source/api_documentation/drs.md#esgvoc.apps.drs.report.GenerationIssueVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an DRS generation issue visitor.
 
 * **Parameters:**
-  **visitor** ([*GenerationIssueVisitor*](#esgvoc.apps.drs.report.GenerationIssueVisitor)) – The DRS generation issue visitor.
+  **visitor** ([*GenerationIssueVisitor*](../source/api_documentation/drs.md#esgvoc.apps.drs.report.GenerationIssueVisitor)) – The DRS generation issue visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -1613,29 +1613,29 @@ Bases: [`Protocol`](https://docs.python.org/3/library/typing.html#typing.Protoco
 
 Specifications for a generator issues visitor.
 
-#### visit_assign_term_issue(issue: [AssignedTerm](#esgvoc.apps.drs.report.AssignedTerm)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### visit_assign_term_issue(issue: [AssignedTerm](../source/api_documentation/drs.md#esgvoc.apps.drs.report.AssignedTerm)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Visit an assign term issue.
 
-#### visit_conflicting_collections_issue(issue: [ConflictingCollections](#esgvoc.apps.drs.report.ConflictingCollections)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### visit_conflicting_collections_issue(issue: [ConflictingCollections](../source/api_documentation/drs.md#esgvoc.apps.drs.report.ConflictingCollections)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Visit a conflicting collections issue.
 
-#### visit_invalid_term_issue(issue: [InvalidTerm](#esgvoc.apps.drs.report.InvalidTerm)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### visit_invalid_term_issue(issue: [InvalidTerm](../source/api_documentation/drs.md#esgvoc.apps.drs.report.InvalidTerm)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Visit an invalid term issue.
 
-#### visit_missing_term_issue(issue: [MissingTerm](#esgvoc.apps.drs.report.MissingTerm)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### visit_missing_term_issue(issue: [MissingTerm](../source/api_documentation/drs.md#esgvoc.apps.drs.report.MissingTerm)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Visit a missing term issue.
 
-#### visit_too_many_terms_collection_issue(issue: [TooManyTermCollection](#esgvoc.apps.drs.report.TooManyTermCollection)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### visit_too_many_terms_collection_issue(issue: [TooManyTermCollection](../source/api_documentation/drs.md#esgvoc.apps.drs.report.TooManyTermCollection)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Visit a too many terms collection issue.
 
 ### *Pydantic model* esgvoc.apps.drs.report.InvalidTerm
 
-Bases: [`TermIssue`](#esgvoc.apps.drs.report.TermIssue), [`GenerationIssue`](#esgvoc.apps.drs.report.GenerationIssue)
+Bases: [`TermIssue`](../source/api_documentation/drs.md#esgvoc.apps.drs.report.TermIssue), [`GenerationIssue`](../source/api_documentation/drs.md#esgvoc.apps.drs.report.GenerationIssue)
 
 Represents a problem of invalid term against a collection or a constant part of a DRS specification.
 
@@ -1692,12 +1692,12 @@ The faulty term.
 
 The position of the faulty term (the part position, not the column of the characters.
 
-#### accept(visitor: [ComplianceIssueVisitor](#esgvoc.apps.drs.report.ComplianceIssueVisitor) | [GenerationIssueVisitor](#esgvoc.apps.drs.report.GenerationIssueVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [ComplianceIssueVisitor](../source/api_documentation/drs.md#esgvoc.apps.drs.report.ComplianceIssueVisitor) | [GenerationIssueVisitor](../source/api_documentation/drs.md#esgvoc.apps.drs.report.GenerationIssueVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an DRS compliance issue visitor.
 
 * **Parameters:**
-  **visitor** ([*ComplianceIssueVisitor*](#esgvoc.apps.drs.report.ComplianceIssueVisitor)) – The DRS compliance issue visitor.
+  **visitor** ([*ComplianceIssueVisitor*](../source/api_documentation/drs.md#esgvoc.apps.drs.report.ComplianceIssueVisitor)) – The DRS compliance issue visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -1759,7 +1759,7 @@ Represents a problem of non-compliance of the DRS expression.
 
 ### *Pydantic model* esgvoc.apps.drs.report.MissingTerm
 
-Bases: [`ComplianceIssue`](#esgvoc.apps.drs.report.ComplianceIssue), [`GenerationIssue`](#esgvoc.apps.drs.report.GenerationIssue)
+Bases: [`ComplianceIssue`](../source/api_documentation/drs.md#esgvoc.apps.drs.report.ComplianceIssue), [`GenerationIssue`](../source/api_documentation/drs.md#esgvoc.apps.drs.report.GenerationIssue)
 
 Represents a problem of missing term for a collection part of the DRS specification.
 
@@ -1807,12 +1807,12 @@ The collection part position (not the column of the characters).
 
 The class name of the issue for JSON serialization/deserialization.
 
-#### accept(visitor: [ComplianceIssueVisitor](#esgvoc.apps.drs.report.ComplianceIssueVisitor) | [GenerationIssueVisitor](#esgvoc.apps.drs.report.GenerationIssueVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [ComplianceIssueVisitor](../source/api_documentation/drs.md#esgvoc.apps.drs.report.ComplianceIssueVisitor) | [GenerationIssueVisitor](../source/api_documentation/drs.md#esgvoc.apps.drs.report.GenerationIssueVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an DRS compliance issue visitor.
 
 * **Parameters:**
-  **visitor** ([*ComplianceIssueVisitor*](#esgvoc.apps.drs.report.ComplianceIssueVisitor)) – The DRS compliance issue visitor.
+  **visitor** ([*ComplianceIssueVisitor*](../source/api_documentation/drs.md#esgvoc.apps.drs.report.ComplianceIssueVisitor)) – The DRS compliance issue visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -1820,7 +1820,7 @@ Accept an DRS compliance issue visitor.
 
 ### *Pydantic model* esgvoc.apps.drs.report.ParsingIssue
 
-Bases: [`DrsIssue`](#esgvoc.apps.drs.report.DrsIssue)
+Bases: [`DrsIssue`](../source/api_documentation/drs.md#esgvoc.apps.drs.report.DrsIssue)
 
 Generic class for the DRS parsing issues.
 
@@ -1865,12 +1865,12 @@ the column of faulty characters.
 
 The class name of the issue for JSON serialization/deserialization.
 
-#### *abstractmethod* accept(visitor: [ParsingIssueVisitor](#esgvoc.apps.drs.report.ParsingIssueVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### *abstractmethod* accept(visitor: [ParsingIssueVisitor](../source/api_documentation/drs.md#esgvoc.apps.drs.report.ParsingIssueVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an DRS parsing issue visitor.
 
 * **Parameters:**
-  **visitor** ([*ParsingIssueVisitor*](#esgvoc.apps.drs.report.ParsingIssueVisitor)) – The DRS parsing issue visitor.
+  **visitor** ([*ParsingIssueVisitor*](../source/api_documentation/drs.md#esgvoc.apps.drs.report.ParsingIssueVisitor)) – The DRS parsing issue visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -1882,29 +1882,29 @@ Bases: [`Protocol`](https://docs.python.org/3/library/typing.html#typing.Protoco
 
 Specifications for a parsing issues visitor.
 
-#### visit_blank_term_issue(issue: [BlankTerm](#esgvoc.apps.drs.report.BlankTerm)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### visit_blank_term_issue(issue: [BlankTerm](../source/api_documentation/drs.md#esgvoc.apps.drs.report.BlankTerm)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Visit a blank term issue.
 
-#### visit_extra_char_issue(issue: [ExtraChar](#esgvoc.apps.drs.report.ExtraChar)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### visit_extra_char_issue(issue: [ExtraChar](../source/api_documentation/drs.md#esgvoc.apps.drs.report.ExtraChar)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Visit an extra char issue.
 
-#### visit_extra_separator_issue(issue: [ExtraSeparator](#esgvoc.apps.drs.report.ExtraSeparator)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### visit_extra_separator_issue(issue: [ExtraSeparator](../source/api_documentation/drs.md#esgvoc.apps.drs.report.ExtraSeparator)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Visit an extra separator issue.
 
-#### visit_space_issue(issue: [Space](#esgvoc.apps.drs.report.Space)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### visit_space_issue(issue: [Space](../source/api_documentation/drs.md#esgvoc.apps.drs.report.Space)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Visit a space issue.
 
-#### visit_unparsable_issue(issue: [Unparsable](#esgvoc.apps.drs.report.Unparsable)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### visit_unparsable_issue(issue: [Unparsable](../source/api_documentation/drs.md#esgvoc.apps.drs.report.Unparsable)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Visit a unparsable issue.
 
 ### *Pydantic model* esgvoc.apps.drs.report.Space
 
-Bases: [`ParsingIssue`](#esgvoc.apps.drs.report.ParsingIssue)
+Bases: [`ParsingIssue`](../source/api_documentation/drs.md#esgvoc.apps.drs.report.ParsingIssue)
 
 Represents a problem of unnecessary space[s] at the beginning or end of the DRS expression.
 Note: column is None.
@@ -1949,12 +1949,12 @@ the column of faulty characters.
 
 The class name of the issue for JSON serialization/deserialization.
 
-#### accept(visitor: [ParsingIssueVisitor](#esgvoc.apps.drs.report.ParsingIssueVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [ParsingIssueVisitor](../source/api_documentation/drs.md#esgvoc.apps.drs.report.ParsingIssueVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an DRS parsing issue visitor.
 
 * **Parameters:**
-  **visitor** ([*ParsingIssueVisitor*](#esgvoc.apps.drs.report.ParsingIssueVisitor)) – The DRS parsing issue visitor.
+  **visitor** ([*ParsingIssueVisitor*](../source/api_documentation/drs.md#esgvoc.apps.drs.report.ParsingIssueVisitor)) – The DRS parsing issue visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -1962,7 +1962,7 @@ Accept an DRS parsing issue visitor.
 
 ### *Pydantic model* esgvoc.apps.drs.report.TermIssue
 
-Bases: [`ComplianceIssue`](#esgvoc.apps.drs.report.ComplianceIssue)
+Bases: [`ComplianceIssue`](../source/api_documentation/drs.md#esgvoc.apps.drs.report.ComplianceIssue)
 
 Generic class for the DRS term issues.
 
@@ -2009,12 +2009,12 @@ The faulty term.
 
 The position of the faulty term (the part position, not the column of the characters.
 
-#### *abstractmethod* accept(visitor: [ComplianceIssueVisitor](#esgvoc.apps.drs.report.ComplianceIssueVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### *abstractmethod* accept(visitor: [ComplianceIssueVisitor](../source/api_documentation/drs.md#esgvoc.apps.drs.report.ComplianceIssueVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an DRS compliance issue visitor.
 
 * **Parameters:**
-  **visitor** ([*ComplianceIssueVisitor*](#esgvoc.apps.drs.report.ComplianceIssueVisitor)) – The DRS compliance issue visitor.
+  **visitor** ([*ComplianceIssueVisitor*](../source/api_documentation/drs.md#esgvoc.apps.drs.report.ComplianceIssueVisitor)) – The DRS compliance issue visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -2022,7 +2022,7 @@ Accept an DRS compliance issue visitor.
 
 ### *Pydantic model* esgvoc.apps.drs.report.TooManyTermCollection
 
-Bases: [`GenerationIssue`](#esgvoc.apps.drs.report.GenerationIssue)
+Bases: [`GenerationIssue`](../source/api_documentation/drs.md#esgvoc.apps.drs.report.GenerationIssue)
 
 Represents a problem while inferring a mapping collection - term in the generation
 of a DRS expression based on a bag of terms. The problem is that more than one term
@@ -2075,12 +2075,12 @@ The class name of the issue for JSON serialization/deserialization.
 
 The faulty terms.
 
-#### accept(visitor: [GenerationIssueVisitor](#esgvoc.apps.drs.report.GenerationIssueVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [GenerationIssueVisitor](../source/api_documentation/drs.md#esgvoc.apps.drs.report.GenerationIssueVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an DRS generation issue visitor.
 
 * **Parameters:**
-  **visitor** ([*GenerationIssueVisitor*](#esgvoc.apps.drs.report.GenerationIssueVisitor)) – The DRS generation issue visitor.
+  **visitor** ([*GenerationIssueVisitor*](../source/api_documentation/drs.md#esgvoc.apps.drs.report.GenerationIssueVisitor)) – The DRS generation issue visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -2088,7 +2088,7 @@ Accept an DRS generation issue visitor.
 
 ### *Pydantic model* esgvoc.apps.drs.report.Unparsable
 
-Bases: [`ParsingIssue`](#esgvoc.apps.drs.report.ParsingIssue)
+Bases: [`ParsingIssue`](../source/api_documentation/drs.md#esgvoc.apps.drs.report.ParsingIssue)
 
 Represents a problem of non-compliance of the DRS expression.
 Note: column is None.
@@ -2147,7 +2147,7 @@ Note: column is None.
 
 the column of faulty characters.
 
-#### *field* expected_drs_type *: [DrsType](project_specs.md#esgvoc.api.project_specs.DrsType)* *[Required]*
+#### *field* expected_drs_type *: [DrsType](../source/api_documentation/project_specs.md#esgvoc.api.project_specs.DrsType)* *[Required]*
 
 The expected DRS type of the expression (directory, file name or dataset id).
 
@@ -2155,12 +2155,12 @@ The expected DRS type of the expression (directory, file name or dataset id).
 
 The class name of the issue for JSON serialization/deserialization.
 
-#### accept(visitor: [ParsingIssueVisitor](#esgvoc.apps.drs.report.ParsingIssueVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### accept(visitor: [ParsingIssueVisitor](../source/api_documentation/drs.md#esgvoc.apps.drs.report.ParsingIssueVisitor)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Accept an DRS parsing issue visitor.
 
 * **Parameters:**
-  **visitor** ([*ParsingIssueVisitor*](#esgvoc.apps.drs.report.ParsingIssueVisitor)) – The DRS parsing issue visitor.
+  **visitor** ([*ParsingIssueVisitor*](../source/api_documentation/drs.md#esgvoc.apps.drs.report.ParsingIssueVisitor)) – The DRS parsing issue visitor.
 * **Returns:**
   Depending on the visitor.
 * **Return type:**
@@ -2168,40 +2168,40 @@ Accept an DRS parsing issue visitor.
 
 ### *class* esgvoc.apps.drs.report.ValidationIssueVisitor(\*args, \*\*kwargs)
 
-Bases: [`ParsingIssueVisitor`](#esgvoc.apps.drs.report.ParsingIssueVisitor), [`ComplianceIssueVisitor`](#esgvoc.apps.drs.report.ComplianceIssueVisitor)
+Bases: [`ParsingIssueVisitor`](../source/api_documentation/drs.md#esgvoc.apps.drs.report.ParsingIssueVisitor), [`ComplianceIssueVisitor`](../source/api_documentation/drs.md#esgvoc.apps.drs.report.ComplianceIssueVisitor)
 
-#### visit_blank_term_issue(issue: [BlankTerm](#esgvoc.apps.drs.report.BlankTerm)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### visit_blank_term_issue(issue: [BlankTerm](../source/api_documentation/drs.md#esgvoc.apps.drs.report.BlankTerm)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Visit a blank term issue.
 
-#### visit_extra_char_issue(issue: [ExtraChar](#esgvoc.apps.drs.report.ExtraChar)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### visit_extra_char_issue(issue: [ExtraChar](../source/api_documentation/drs.md#esgvoc.apps.drs.report.ExtraChar)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Visit an extra char issue.
 
-#### visit_extra_separator_issue(issue: [ExtraSeparator](#esgvoc.apps.drs.report.ExtraSeparator)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### visit_extra_separator_issue(issue: [ExtraSeparator](../source/api_documentation/drs.md#esgvoc.apps.drs.report.ExtraSeparator)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Visit an extra separator issue.
 
-#### visit_extra_term_issue(issue: [ExtraTerm](#esgvoc.apps.drs.report.ExtraTerm)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### visit_extra_term_issue(issue: [ExtraTerm](../source/api_documentation/drs.md#esgvoc.apps.drs.report.ExtraTerm)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Visit an extra term issue.
 
-#### visit_filename_extension_issue(issue: [FileNameExtensionIssue](#esgvoc.apps.drs.report.FileNameExtensionIssue)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### visit_filename_extension_issue(issue: [FileNameExtensionIssue](../source/api_documentation/drs.md#esgvoc.apps.drs.report.FileNameExtensionIssue)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Visit a file name extension issue.
 
-#### visit_invalid_term_issue(issue: [InvalidTerm](#esgvoc.apps.drs.report.InvalidTerm)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### visit_invalid_term_issue(issue: [InvalidTerm](../source/api_documentation/drs.md#esgvoc.apps.drs.report.InvalidTerm)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Visit an invalid term issue.
 
-#### visit_missing_term_issue(issue: [MissingTerm](#esgvoc.apps.drs.report.MissingTerm)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### visit_missing_term_issue(issue: [MissingTerm](../source/api_documentation/drs.md#esgvoc.apps.drs.report.MissingTerm)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Visit a missing term issue.
 
-#### visit_space_issue(issue: [Space](#esgvoc.apps.drs.report.Space)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### visit_space_issue(issue: [Space](../source/api_documentation/drs.md#esgvoc.apps.drs.report.Space)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Visit a space issue.
 
-#### visit_unparsable_issue(issue: [Unparsable](#esgvoc.apps.drs.report.Unparsable)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
+#### visit_unparsable_issue(issue: [Unparsable](../source/api_documentation/drs.md#esgvoc.apps.drs.report.Unparsable)) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)
 
 Visit a unparsable issue.

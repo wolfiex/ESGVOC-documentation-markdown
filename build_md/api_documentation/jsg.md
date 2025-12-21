@@ -11,10 +11,10 @@ Generate json schema for the given project.
 * **Return type:**
   [dict](https://docs.python.org/3/library/stdtypes.html#dict)
 * **Raises:**
-  * [**EsgvocValueError**](miscellaneous.md#esgvoc.core.exceptions.EsgvocValueError) – On wrong information in catalog_specs.
-  * [**EsgvocNotFoundError**](miscellaneous.md#esgvoc.core.exceptions.EsgvocNotFoundError) – On missing information in catalog_specs.
-  * [**EsgvocNotImplementedError**](miscellaneous.md#esgvoc.core.exceptions.EsgvocNotImplementedError) – On unexpected operations resulted in wrong information in catalog_specs).
-  * [**EsgvocException**](miscellaneous.md#esgvoc.core.exceptions.EsgvocException) – On json compliance error.
+  * [**EsgvocValueError**](../source/api_documentation/miscellaneous.md#esgvoc.core.exceptions.EsgvocValueError) – On wrong information in catalog_specs.
+  * [**EsgvocNotFoundError**](../source/api_documentation/miscellaneous.md#esgvoc.core.exceptions.EsgvocNotFoundError) – On missing information in catalog_specs.
+  * [**EsgvocNotImplementedError**](../source/api_documentation/miscellaneous.md#esgvoc.core.exceptions.EsgvocNotImplementedError) – On unexpected operations resulted in wrong information in catalog_specs).
+  * [**EsgvocException**](../source/api_documentation/miscellaneous.md#esgvoc.core.exceptions.EsgvocException) – On json compliance error.
 
 ### esgvoc.apps.jsg.json_schema_generator.pretty_print_json_node(obj: [dict](https://docs.python.org/3/library/stdtypes.html#dict)) → [str](https://docs.python.org/3/library/stdtypes.html#str)
 
